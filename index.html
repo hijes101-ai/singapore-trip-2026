@@ -1,0 +1,2097 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="新加坡行程 2026/11/9–11/13 · 3人 · 5天4夜 · Bugis Social">
+<title>新加坡行程 · 2026/11/9–11/13</title>
+<!--
+  字型說明：本站預設使用系統／Noto Sans TC。
+  若你已合法取得「jf 金萱那提」授權，可將 woff2 放在本 HTML 同資料夾，
+  檔名建議：jf-jinxuan-natti.woff2（及可選的 jf-jinxuan-natti-bold.woff2），
+  並取消下方 @font-face 註解即可離線載入。請勿未經授權連結 justfont CDN。
+-->
+<!--
+@font-face {
+  font-family: "jf 金萱那提";
+  src: url("./jf-jinxuan-natti.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "jf 金萱那提";
+  src: url("./jf-jinxuan-natti-bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+-->
+<style>
+:root {
+  --c-purple: #9f99d1;
+  --c-cyan: #86bada;
+  --c-lavender: #dbaad7;
+  --c-peach: #f6bcb0;
+  --c-cream: #ffe3b3;
+  --glass-bg: rgba(255, 255, 255, 0.22);
+  --glass-bg-strong: rgba(255, 255, 255, 0.34);
+  --glass-border: rgba(255, 255, 255, 0.68);
+  --glass-border-soft: rgba(255, 255, 255, 0.42);
+  --text: #2a2a38;
+  --text-muted: #55556a;
+  --shadow: 0 24px 64px rgba(120, 110, 180, 0.22), 0 8px 24px rgba(134, 186, 218, 0.16), 0 2px 8px rgba(0,0,0,0.04);
+  --shadow-sm: 0 12px 32px rgba(120, 110, 180, 0.16), 0 4px 12px rgba(134, 186, 218, 0.1);
+  --radius: 22px;
+  --radius-sm: 14px;
+  --nav-h: 58px;
+  --safe-b: env(safe-area-inset-bottom, 0px);
+  --safe-t: env(safe-area-inset-top, 0px);
+  --font: "jf 金萱那提", "jf金萱那提", "jf-JinXuan-Natti", "jf JinXuan Latte", "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", system-ui, -apple-system, sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--nav-h) + var(--safe-t) + 12px);
+}
+
+html.reduce-motion {
+  scroll-behavior: auto;
+}
+
+body {
+  font-family: var(--font);
+  color: var(--text);
+  line-height: 1.6;
+  min-height: 100vh;
+  background:
+    radial-gradient(ellipse 90% 55% at 8% -5%, rgba(159,153,209,0.55), transparent 58%),
+    radial-gradient(ellipse 80% 50% at 95% 8%, rgba(134,186,218,0.58), transparent 52%),
+    radial-gradient(ellipse 70% 48% at 15% 75%, rgba(246,188,176,0.5), transparent 55%),
+    radial-gradient(ellipse 65% 42% at 88% 88%, rgba(219,170,215,0.48), transparent 52%),
+    radial-gradient(ellipse 55% 38% at 50% 48%, rgba(255,227,179,0.42), transparent 58%),
+    linear-gradient(160deg, #ebe6f7 0%, #e4f0f7 35%, #f5e8e4 70%, #f7efd8 100%);
+  background-attachment: fixed;
+  -webkit-font-smoothing: antialiased;
+  padding-bottom: calc(32px + var(--safe-b));
+}
+
+img, svg { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+button { font-family: inherit; cursor: pointer; border: none; background: none; color: inherit; }
+ul { list-style: none; }
+
+/* —— Glass helpers —— */
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(36px) saturate(1.65);
+  -webkit-backdrop-filter: blur(36px) saturate(1.65);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--shadow), inset 0 1px 0 rgba(255,255,255,0.75), inset 0 -1px 0 rgba(255,255,255,0.12);
+  border-radius: var(--radius);
+}
+
+.glass-strong {
+  background: var(--glass-bg-strong);
+}
+
+/* —— Nav —— */
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: calc(8px + var(--safe-t)) 12px 8px;
+}
+
+.nav-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.28);
+  backdrop-filter: blur(32px) saturate(1.6);
+  -webkit-backdrop-filter: blur(32px) saturate(1.6);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--shadow-sm), inset 0 1px 0 rgba(255,255,255,0.8);
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  font-size: 0.92rem;
+  white-space: nowrap;
+  padding: 4px 6px;
+  flex-shrink: 0;
+}
+
+.nav-brand svg { width: 28px; height: 28px; }
+
+.nav-toggle {
+  display: none;
+  margin-left: auto;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(159,153,209,0.25);
+  border: 1px solid var(--glass-border-soft);
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.nav-toggle span,
+.nav-toggle span::before,
+.nav-toggle span::after {
+  display: block;
+  width: 18px;
+  height: 2px;
+  background: var(--text);
+  border-radius: 2px;
+  position: relative;
+  transition: transform 0.25s, opacity 0.2s;
+}
+.nav-toggle span::before,
+.nav-toggle span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+.nav-toggle span::before { top: -6px; }
+.nav-toggle span::after { top: 6px; }
+.nav-toggle[aria-expanded="true"] span { background: transparent; }
+.nav-toggle[aria-expanded="true"] span::before { top: 0; transform: rotate(45deg); }
+.nav-toggle[aria-expanded="true"] span::after { top: 0; transform: rotate(-45deg); }
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+  margin-left: auto;
+  align-items: center;
+}
+
+.nav-links a {
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  transition: background 0.2s, color 0.2s;
+}
+.nav-links a:hover,
+.nav-links a:focus-visible {
+  background: rgba(159,153,209,0.28);
+  color: var(--text);
+  outline: none;
+}
+
+.nav-motion {
+  margin-left: 4px;
+  padding: 7px 12px;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  background: rgba(134,186,218,0.28);
+  border: 1px solid var(--glass-border-soft);
+  white-space: nowrap;
+}
+.nav-motion[aria-pressed="true"] {
+  background: rgba(159,153,209,0.4);
+}
+
+@media (max-width: 760px) {
+  .nav-toggle { display: flex; }
+  .nav-links {
+    display: none;
+    position: absolute;
+    left: 12px;
+    right: 12px;
+    top: calc(100% + 6px);
+    flex-direction: column;
+    align-items: stretch;
+    margin: 0;
+    padding: 10px;
+    border-radius: var(--radius-sm);
+    background: rgba(255,255,255,0.42);
+    backdrop-filter: blur(36px) saturate(1.6);
+    -webkit-backdrop-filter: blur(36px) saturate(1.6);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--shadow);
+  }
+  .nav-links.open { display: flex; }
+  .nav-links a { padding: 12px 14px; }
+  .nav-motion { margin: 6px 4px 2px; text-align: center; }
+}
+
+/* —— Layout —— */
+.wrap {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 8px 16px 0;
+}
+
+section {
+  margin-top: 36px;
+  scroll-margin-top: calc(var(--nav-h) + var(--safe-t) + 12px);
+}
+
+.section-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+.section-head h2 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+.section-head .icon-chip {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  background: rgba(255,255,255,0.28);
+  border: 1px solid var(--glass-border-soft);
+  box-shadow: var(--shadow-sm), inset 0 1px 0 rgba(255,255,255,0.7);
+  flex-shrink: 0;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+.section-head .icon-chip svg { width: 22px; height: 22px; }
+
+/* —— Hero —— */
+.hero {
+  display: grid;
+  gap: 20px;
+  padding: 22px 18px 26px;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: auto -20% -40% 40%;
+  height: 70%;
+  background: radial-gradient(circle, rgba(219,170,215,0.45), transparent 65%);
+  pointer-events: none;
+  z-index: 0;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: -30% 50% auto -20%;
+  height: 60%;
+  background: radial-gradient(circle, rgba(134,186,218,0.4), transparent 65%);
+  pointer-events: none;
+  z-index: 0;
+}
+.hero > * { position: relative; z-index: 1; }
+
+.hero-art {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  animation: floatY 5.5s ease-in-out infinite;
+  filter: drop-shadow(0 18px 36px rgba(80,100,160,0.22));
+}
+html.reduce-motion .hero-art { animation: none; }
+
+@keyframes floatY {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.hero-copy { text-align: center; }
+.hero-copy h1 {
+  font-size: clamp(1.45rem, 5vw, 2rem);
+  font-weight: 700;
+  line-height: 1.35;
+  margin-bottom: 6px;
+}
+.hero-copy .sub {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 18px;
+}
+
+.countdown {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  max-width: 360px;
+  margin: 0 auto;
+}
+.countdown-unit {
+  padding: 12px 6px;
+  border-radius: var(--radius-sm);
+  background: rgba(255,255,255,0.28);
+  border: 1px solid var(--glass-border-soft);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.75), 0 8px 20px rgba(120,110,180,0.1);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+.countdown-unit .num {
+  font-size: 1.45rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.1;
+  background: linear-gradient(135deg, var(--c-purple), var(--c-lavender));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.countdown-unit .label {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+.countdown-status {
+  display: none;
+  padding: 14px 20px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, rgba(159,153,209,0.45), rgba(134,186,218,0.4));
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+@media (min-width: 700px) {
+  .hero {
+    grid-template-columns: 1.05fr 1fr;
+    align-items: center;
+    padding: 28px 28px 32px;
+  }
+  .hero-copy { text-align: left; }
+  .countdown { margin: 0; }
+  .hero-art { max-width: none; }
+}
+
+/* —— Flight cards —— */
+.flight-grid {
+  display: grid;
+  gap: 14px;
+}
+@media (min-width: 640px) {
+  .flight-grid { grid-template-columns: 1fr 1fr; }
+}
+
+.flight-card {
+  padding: 18px 18px 16px;
+  position: relative;
+  overflow: hidden;
+}
+.flight-card::before {
+  content: "";
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  filter: blur(30px);
+  opacity: 0.55;
+  pointer-events: none;
+}
+.flight-card.out::before {
+  background: var(--c-purple);
+  top: -40px; right: -30px;
+}
+.flight-card.in::before {
+  background: var(--c-cyan);
+  bottom: -40px; left: -30px;
+}
+.flight-card > * { position: relative; z-index: 1; }
+
+.flight-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 999px;
+  margin-bottom: 10px;
+  background: rgba(255,255,255,0.55);
+  border: 1px solid var(--glass-border-soft);
+}
+.flight-tag svg { width: 16px; height: 16px; }
+
+.flight-route {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+.flight-city {
+  flex: 1;
+}
+.flight-city .code {
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+.flight-city .time {
+  font-size: 1.05rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+.flight-city .meta {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+.flight-city.to { text-align: right; }
+.flight-arrow {
+  flex-shrink: 0;
+  width: 48px;
+  opacity: 0.7;
+}
+.flight-arrow svg { width: 100%; height: 24px; }
+
+.flight-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 10px;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+.flight-info strong { color: var(--text); font-weight: 600; }
+
+/* —— Day switcher —— */
+.day-switcher {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding: 4px 2px 12px;
+  margin: 0 -4px 4px;
+  scroll-snap-type: x proximity;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  position: relative;
+  z-index: 5;
+}
+.day-pill {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.28);
+  border: 1px solid var(--glass-border-soft);
+  box-shadow: var(--shadow-sm), inset 0 1px 0 rgba(255,255,255,0.7);
+  text-align: center;
+  min-width: 92px;
+  backdrop-filter: blur(20px) saturate(1.4);
+  -webkit-backdrop-filter: blur(20px) saturate(1.4);
+  pointer-events: auto;
+  position: relative;
+  z-index: 2;
+  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), background 0.2s, box-shadow 0.2s;
+}
+.day-pill:focus-visible {
+  outline: 2px solid var(--c-purple);
+  outline-offset: 2px;
+}
+.day-pill .d-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--text-muted);
+}
+.day-pill .d-date {
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+.day-pill.active {
+  background: linear-gradient(135deg, rgba(159,153,209,0.55), rgba(134,186,218,0.48));
+  border-color: rgba(255,255,255,0.85);
+  box-shadow: 0 10px 28px rgba(159,153,209,0.35);
+  color: #1f1f2a;
+}
+.day-pill.active .d-label { color: rgba(40,40,55,0.75); }
+html:not(.reduce-motion) .day-pill.active.bounce {
+  animation: pillBounce 0.55s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+@keyframes pillBounce {
+  0% { transform: scale(0.86); }
+  55% { transform: scale(1.08); }
+  100% { transform: scale(1); }
+}
+
+.day-panel {
+  display: none;
+  padding: 18px 16px 20px;
+}
+.day-panel.active { display: block !important; }
+html:not(.reduce-motion) .day-panel.active.enter {
+  animation: panelEnter 0.5s cubic-bezier(0.34, 1.45, 0.64, 1);
+}
+@keyframes panelEnter {
+  0% { opacity: 0; transform: translateY(16px) scale(0.97); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.day-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.day-desc {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  margin-bottom: 18px;
+}
+
+/* —— Timeline —— */
+.timeline {
+  position: relative;
+  padding-left: 18px;
+}
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 6px;
+  bottom: 6px;
+  width: 2px;
+  background: linear-gradient(180deg, var(--c-purple), var(--c-cyan), var(--c-peach));
+  border-radius: 2px;
+  opacity: 0.55;
+}
+.tl-item {
+  position: relative;
+  padding: 0 0 18px 16px;
+}
+.tl-item:last-child { padding-bottom: 0; }
+.tl-item::before {
+  content: "";
+  position: absolute;
+  left: -17px;
+  top: 8px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #fff, var(--c-lavender));
+  border: 2px solid rgba(159,153,209,0.7);
+  box-shadow: 0 0 0 3px rgba(255,255,255,0.5);
+}
+.tl-time {
+  font-size: 0.8rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--c-purple);
+  margin-bottom: 2px;
+}
+.tl-title {
+  font-size: 0.98rem;
+  font-weight: 700;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+.tl-note {
+  font-size: 0.84rem;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+.tl-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 8px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 3px 9px;
+  border-radius: 999px;
+  letter-spacing: 0.02em;
+  border: 1px solid transparent;
+}
+.badge-must {
+  background: linear-gradient(135deg, rgba(246,188,176,0.85), rgba(255,227,179,0.8));
+  color: #5a2e2a;
+  border-color: rgba(255,255,255,0.6);
+  box-shadow: 0 2px 8px rgba(246,188,176,0.4);
+}
+.tag-mrt {
+  background: rgba(134,186,218,0.45);
+  border-color: rgba(134,186,218,0.5);
+  color: #1e4a62;
+}
+.tag-grab {
+  background: rgba(159,153,209,0.45);
+  border-color: rgba(159,153,209,0.5);
+  color: #3a3560;
+}
+.tag-walk {
+  background: rgba(255,227,179,0.55);
+  border-color: rgba(255,227,179,0.6);
+  color: #6a5020;
+}
+.tag-sentosa {
+  background: rgba(219,170,215,0.5);
+  border-color: rgba(219,170,215,0.55);
+  color: #5a2e58;
+}
+.tag-other {
+  background: rgba(246,188,176,0.45);
+  border-color: rgba(246,188,176,0.5);
+  color: #5a3530;
+}
+.tag-optional {
+  background: rgba(255,255,255,0.5);
+  border-color: var(--glass-border-soft);
+  color: var(--text-muted);
+}
+
+/* —— Todo —— */
+.todo-list {
+  padding: 8px 6px;
+}
+.todo-group {
+  margin-bottom: 18px;
+}
+.todo-group:last-child { margin-bottom: 0; }
+.todo-group h3 {
+  font-size: 0.92rem;
+  font-weight: 700;
+  margin: 0 10px 10px;
+  color: var(--text-muted);
+}
+.todo-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 14px;
+  border-radius: var(--radius-sm);
+  margin: 0 4px 6px;
+  background: rgba(255,255,255,0.22);
+  border: 1px solid transparent;
+  transition: background 0.2s;
+  cursor: pointer;
+}
+.todo-item:hover { background: rgba(255,255,255,0.38); }
+.todo-item input {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 22px;
+  height: 22px;
+  border-radius: 7px;
+  border: 2px solid rgba(159,153,209,0.55);
+  background: rgba(255,255,255,0.6);
+  flex-shrink: 0;
+  margin-top: 1px;
+  position: relative;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+}
+.todo-item input:checked {
+  background: linear-gradient(135deg, var(--c-purple), var(--c-cyan));
+  border-color: transparent;
+}
+.todo-item input:checked::after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.todo-item input:focus-visible {
+  outline: 2px solid var(--c-purple);
+  outline-offset: 2px;
+}
+.todo-item span {
+  font-size: 0.92rem;
+  flex: 1;
+}
+.todo-item.done span {
+  text-decoration: line-through;
+  color: var(--text-muted);
+  opacity: 0.75;
+}
+.todo-warn {
+  margin: 12px 14px 6px;
+  padding: 12px 14px;
+  border-radius: var(--radius-sm);
+  background: rgba(246,188,176,0.35);
+  border: 1px solid rgba(246,188,176,0.55);
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+/* —— Hotel —— */
+.hotel-card {
+  padding: 22px 18px;
+  display: grid;
+  gap: 16px;
+}
+@media (min-width: 640px) {
+  .hotel-card {
+    grid-template-columns: auto 1fr;
+    align-items: start;
+  }
+}
+.hotel-icon {
+  width: 72px;
+  height: 72px;
+  border-radius: 20px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(145deg, rgba(159,153,209,0.4), rgba(134,186,218,0.35));
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--shadow-sm);
+}
+.hotel-icon svg { width: 40px; height: 40px; }
+.hotel-card h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+.hotel-meta {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  display: grid;
+  gap: 6px;
+}
+.hotel-meta a {
+  color: #3a5a8a;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.hotel-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+}
+.hotel-chips .badge {
+  background: rgba(255,255,255,0.55);
+  border-color: var(--glass-border-soft);
+  color: var(--text);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+/* —— Footer / notes —— */
+.footer {
+  margin-top: 40px;
+  padding: 20px 18px;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+.footer h3 {
+  font-size: 0.92rem;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+.footer ul { display: grid; gap: 4px; margin-bottom: 14px; }
+.footer a { color: #3a5a8a; font-weight: 600; }
+.footer .disclaimer {
+  margin-top: 10px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(159,153,209,0.25);
+  line-height: 1.55;
+}
+
+
+.tl-place {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font: inherit;
+  font-weight: 700;
+  color: var(--text);
+  background: rgba(255,255,255,0.22);
+  border: 1px solid transparent;
+  border-radius: 10px;
+  padding: 2px 8px 2px 6px;
+  margin: -2px -4px;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s, box-shadow 0.2s;
+  text-align: left;
+  max-width: 100%;
+}
+.tl-place:hover,
+.tl-place:focus-visible {
+  background: rgba(255,255,255,0.42);
+  border-color: var(--glass-border-soft);
+  box-shadow: 0 4px 14px rgba(134,186,218,0.25);
+  outline: none;
+}
+.tl-place .chev {
+  flex-shrink: 0;
+  width: 14px;
+  height: 14px;
+  opacity: 0.55;
+}
+.tl-place .cue {
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  padding: 1px 6px;
+  border-radius: 999px;
+  background: rgba(134,186,218,0.28);
+  border: 1px solid rgba(134,186,218,0.35);
+}
+.place-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: rgba(42, 42, 56, 0.35);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.25s, visibility 0.25s;
+}
+.place-overlay.open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.place-sheet {
+  width: 100%;
+  max-width: 520px;
+  max-height: min(88vh, 640px);
+  overflow-y: auto;
+  padding: 12px 20px calc(20px + var(--safe-b));
+  border-radius: 28px 28px 0 0;
+  background: rgba(255,255,255,0.42);
+  backdrop-filter: blur(40px) saturate(1.7);
+  -webkit-backdrop-filter: blur(40px) saturate(1.7);
+  border: 1px solid var(--glass-border);
+  border-bottom: none;
+  box-shadow: 0 -20px 60px rgba(80,90,140,0.28), inset 0 1px 0 rgba(255,255,255,0.8);
+  transform: translateY(24px);
+  transition: transform 0.3s cubic-bezier(0.34, 1.45, 0.64, 1);
+}
+.place-overlay.open .place-sheet { transform: translateY(0); }
+html.reduce-motion .place-overlay,
+html.reduce-motion .place-sheet { transition: none; }
+.place-handle {
+  width: 40px;
+  height: 4px;
+  border-radius: 4px;
+  background: rgba(90,90,110,0.28);
+  margin: 4px auto 14px;
+}
+.place-sheet-head {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.place-sheet-head h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  flex: 1;
+  line-height: 1.35;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.4);
+}
+.place-close {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.35);
+  border: 1px solid var(--glass-border-soft);
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  font-size: 1.2rem;
+  line-height: 1;
+}
+.place-close:focus-visible {
+  outline: 2px solid var(--c-purple);
+  outline-offset: 2px;
+}
+.place-intro {
+  font-size: 0.92rem;
+  margin-bottom: 12px;
+  line-height: 1.65;
+}
+.place-practical {
+  font-size: 0.86rem;
+  color: var(--text-muted);
+  padding: 12px 14px;
+  border-radius: var(--radius-sm);
+  background: rgba(255,255,255,0.28);
+  border: 1px solid var(--glass-border-soft);
+  margin-bottom: 16px;
+  line-height: 1.55;
+}
+.place-maps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 14px 18px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  background: linear-gradient(135deg, rgba(159,153,209,0.55), rgba(134,186,218,0.5));
+  border: 1px solid rgba(255,255,255,0.75);
+  box-shadow: 0 10px 28px rgba(134,186,218,0.35), inset 0 1px 0 rgba(255,255,255,0.7);
+  color: #1f1f2a;
+  text-decoration: none;
+}
+.place-maps:hover,
+.place-maps:focus-visible {
+  filter: brightness(1.05);
+  outline: none;
+}
+.place-maps svg { width: 18px; height: 18px; }
+@media (min-width: 640px) {
+  .place-overlay {
+    align-items: center;
+    padding: 24px;
+  }
+  .place-sheet {
+    border-radius: var(--radius);
+    border-bottom: 1px solid var(--glass-border);
+    max-height: min(80vh, 560px);
+    transform: translateY(12px) scale(0.97);
+  }
+  .place-overlay.open .place-sheet {
+    transform: translateY(0) scale(1);
+  }
+  .place-handle { display: none; }
+}
+body.sheet-open { overflow: hidden; }
+
+/* —— Print —— */
+@media print {
+  body { background: #fff; }
+  .nav, .nav-motion, .nav-toggle, .place-overlay { display: none !important; }
+  .glass, .flight-card, .day-panel, .hotel-card, .footer {
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+    background: #fff !important;
+    border: 1px solid #ddd !important;
+  }
+  .day-panel { display: block !important; page-break-inside: avoid; margin-bottom: 16px; }
+  .hero-art { animation: none !important; }
+  .countdown { display: none; }
+}
+
+/* reduced motion media query baseline */
+@media (prefers-reduced-motion: reduce) {
+  .hero-art { animation: none !important; }
+  .win-pulse { animation: none !important; }
+  html { scroll-behavior: auto; }
+}
+html.reduce-motion .win-pulse { animation: none !important; }
+</style>
+</head>
+<body>
+<a class="skip" href="#main" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">跳到主要內容</a>
+
+<nav class="nav" aria-label="主要選單">
+  <div class="nav-inner">
+    <a href="#home" class="nav-brand" aria-label="回到首頁">
+      <svg viewBox="0 0 40 40" aria-hidden="true">
+        <defs>
+          <linearGradient id="navMerlion" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#9f99d1"/>
+            <stop offset="100%" stop-color="#86bada"/>
+          </linearGradient>
+        </defs>
+        <circle cx="20" cy="20" r="18" fill="url(#navMerlion)" opacity="0.35"/>
+        <path d="M12 28c2-6 4-10 8-12 1-4 3-7 5-8-1 3-1 6 0 8 3 1 6 4 7 8-3-1-5 0-7 2-2 3-4 4-7 4-2 0-4-1-6-2z" fill="url(#navMerlion)"/>
+        <path d="M20 16c2 0 3 1 4 3" stroke="#fff" stroke-width="1.2" fill="none" opacity="0.8"/>
+      </svg>
+      新加坡行程
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="開啟選單">
+      <span></span>
+    </button>
+    <div class="nav-links" id="navLinks">
+      <a href="#home">首頁</a>
+      <a href="#flights">航班</a>
+      <a href="#days">每日行程</a>
+      <a href="#todo">待辦</a>
+      <a href="#hotel">住宿</a>
+      <button type="button" class="nav-motion" id="motionToggle" aria-pressed="false" title="切換減少動態效果">減少動態效果</button>
+    </div>
+  </div>
+</nav>
+
+<main id="main" class="wrap">
+
+  <!-- ===== HERO ===== -->
+  <section id="home" class="hero glass" aria-labelledby="hero-title">
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 480 300" xmlns="http://www.w3.org/2000/svg" role="img">
+        <defs>
+          <linearGradient id="skyBlueHour" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#6a7eb8"/>
+            <stop offset="35%" stop-color="#86bada"/>
+            <stop offset="70%" stop-color="#9f99d1"/>
+            <stop offset="100%" stop-color="#c9b8d8"/>
+          </linearGradient>
+          <linearGradient id="towerGlass" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#b8d4e8" stop-opacity="0.85"/>
+            <stop offset="50%" stop-color="#86bada" stop-opacity="0.55"/>
+            <stop offset="100%" stop-color="#6a8ab0" stop-opacity="0.75"/>
+          </linearGradient>
+          <linearGradient id="skyparkG" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="#e8eef5" stop-opacity="0.9"/>
+            <stop offset="50%" stop-color="#ffffff" stop-opacity="0.95"/>
+            <stop offset="100%" stop-color="#d4dde8" stop-opacity="0.85"/>
+          </linearGradient>
+          <linearGradient id="waterBay" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#7a9ec4" stop-opacity="0.55"/>
+            <stop offset="40%" stop-color="#86bada" stop-opacity="0.45"/>
+            <stop offset="100%" stop-color="#5a7a9a" stop-opacity="0.65"/>
+          </linearGradient>
+          <linearGradient id="lotusPetal" x1="0" y1="1" x2="0" y2="0">
+            <stop offset="0%" stop-color="#e8eef5" stop-opacity="0.95"/>
+            <stop offset="100%" stop-color="#ffffff" stop-opacity="0.98"/>
+          </linearGradient>
+          <linearGradient id="rightBldg" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#a8c8e0" stop-opacity="0.7"/>
+            <stop offset="100%" stop-color="#86bada" stop-opacity="0.5"/>
+          </linearGradient>
+          <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+            <feGaussianBlur stdDeviation="4" result="b"/>
+            <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+          <clipPath id="sceneClip">
+            <rect x="12" y="12" width="456" height="276" rx="32"/>
+          </clipPath>
+        </defs>
+        <rect x="12" y="12" width="456" height="276" rx="32" fill="url(#skyBlueHour)" stroke="rgba(255,255,255,0.75)" stroke-width="1.5"/>
+        <g clip-path="url(#sceneClip)">
+          <ellipse cx="100" cy="48" rx="70" ry="10" fill="#fff" opacity="0.18"/>
+          <ellipse cx="280" cy="38" rx="90" ry="8" fill="#fff" opacity="0.12"/>
+          <ellipse cx="380" cy="58" rx="50" ry="7" fill="#fff" opacity="0.15"/>
+          <rect x="12" y="200" width="456" height="88" fill="url(#waterBay)"/>
+          <g opacity="0.85">
+            <rect x="210" y="210" width="10" height="58" rx="3" fill="#ffe3b3" opacity="0.55"/>
+            <rect x="242" y="208" width="8" height="52" rx="3" fill="#f6bcb0" opacity="0.5"/>
+            <rect x="262" y="212" width="12" height="50" rx="3" fill="#ffe3b3" opacity="0.45"/>
+            <rect x="90" y="215" width="18" height="30" rx="4" fill="#fff" opacity="0.25"/>
+            <rect x="340" y="218" width="40" height="22" rx="4" fill="#86bada" opacity="0.35"/>
+            <rect x="360" y="222" width="6" height="28" rx="2" fill="#ffe3b3" opacity="0.4"/>
+          </g>
+          <path d="M40 230 Q120 222 200 232 T360 228 T450 235" fill="none" stroke="#ffe3b3" stroke-width="1.2" opacity="0.35"/>
+          <path d="M30 248 Q150 240 260 250 T460 245" fill="none" stroke="#86bada" stroke-width="1" opacity="0.3"/>
+          <g opacity="0.9">
+            <path d="M350 145 L350 200 L420 200 L420 155 Q400 140 380 148 Z" fill="url(#rightBldg)" stroke="rgba(255,255,255,0.5)" stroke-width="0.8"/>
+            <path d="M420 155 L455 165 L455 200 L420 200 Z" fill="#9f99d1" opacity="0.4" stroke="rgba(255,255,255,0.4)" stroke-width="0.6"/>
+            <path d="M350 145 Q385 128 420 155" fill="none" stroke="#86bada" stroke-width="3" opacity="0.7"/>
+            <path d="M350 145 Q385 128 420 155" fill="none" stroke="#fff" stroke-width="1.2" opacity="0.5"/>
+            <g class="win-pulse">
+              <rect x="360" y="160" width="4" height="5" rx="0.5" fill="#ffe3b3" opacity="0.85"/>
+              <rect x="368" y="160" width="4" height="5" rx="0.5" fill="#f6bcb0" opacity="0.7"/>
+              <rect x="376" y="160" width="4" height="5" rx="0.5" fill="#ffe3b3" opacity="0.8"/>
+              <rect x="360" y="172" width="4" height="5" rx="0.5" fill="#ffe3b3" opacity="0.75"/>
+              <rect x="368" y="172" width="4" height="5" rx="0.5" fill="#ffe3b3" opacity="0.9"/>
+              <rect x="376" y="172" width="4" height="5" rx="0.5" fill="#f6bcb0" opacity="0.65"/>
+              <rect x="384" y="165" width="4" height="5" rx="0.5" fill="#ffe3b3" opacity="0.8"/>
+              <rect x="430" y="172" width="3" height="4" rx="0.5" fill="#ffe3b3" opacity="0.7"/>
+            </g>
+          </g>
+          <g>
+            <rect x="198" y="78" width="26" height="122" rx="2" fill="url(#towerGlass)" stroke="rgba(255,255,255,0.65)" stroke-width="0.9"/>
+            <rect x="232" y="68" width="28" height="132" rx="2" fill="url(#towerGlass)" stroke="rgba(255,255,255,0.7)" stroke-width="0.9"/>
+            <rect x="268" y="82" width="26" height="118" rx="2" fill="url(#towerGlass)" stroke="rgba(255,255,255,0.65)" stroke-width="0.9"/>
+            <rect x="200" y="80" width="4" height="118" fill="#fff" opacity="0.25"/>
+            <rect x="234" y="70" width="5" height="128" fill="#fff" opacity="0.28"/>
+            <rect x="270" y="84" width="4" height="114" fill="#fff" opacity="0.22"/>
+            <g class="win-pulse" filter="url(#softGlow)">
+              <g fill="#ffe3b3">
+                <rect x="204" y="90" width="3" height="3" rx="0.4" opacity="0.9"/><rect x="210" y="90" width="3" height="3" rx="0.4" opacity="0.7"/><rect x="216" y="90" width="3" height="3" rx="0.4" opacity="0.85"/>
+                <rect x="204" y="105" width="3" height="3" rx="0.4" opacity="0.6"/><rect x="210" y="105" width="3" height="3" rx="0.4" opacity="0.95"/><rect x="216" y="105" width="3" height="3" rx="0.4" opacity="0.5"/>
+                <rect x="204" y="120" width="3" height="3" rx="0.4" opacity="0.8"/><rect x="210" y="120" width="3" height="3" rx="0.4" opacity="0.65"/><rect x="216" y="120" width="3" height="3" rx="0.4" opacity="0.9"/>
+                <rect x="204" y="135" width="3" height="3" rx="0.4" opacity="0.55"/><rect x="210" y="135" width="3" height="3" rx="0.4" opacity="0.85"/><rect x="216" y="135" width="3" height="3" rx="0.4" opacity="0.7"/>
+                <rect x="204" y="150" width="3" height="3" rx="0.4" opacity="0.9"/><rect x="210" y="150" width="3" height="3" rx="0.4" opacity="0.5"/><rect x="216" y="150" width="3" height="3" rx="0.4" opacity="0.8"/>
+                <rect x="204" y="165" width="3" height="3" rx="0.4" opacity="0.7"/><rect x="210" y="165" width="3" height="3" rx="0.4" opacity="0.9"/><rect x="216" y="165" width="3" height="3" rx="0.4" opacity="0.6"/>
+                <rect x="204" y="180" width="3" height="3" rx="0.4" opacity="0.85"/><rect x="210" y="180" width="3" height="3" rx="0.4" opacity="0.55"/><rect x="216" y="180" width="3" height="3" rx="0.4" opacity="0.95"/>
+              </g>
+              <g fill="#ffe3b3">
+                <rect x="238" y="80" width="3.2" height="3.2" rx="0.4" opacity="0.85"/><rect x="245" y="80" width="3.2" height="3.2" rx="0.4" opacity="0.7"/><rect x="252" y="80" width="3.2" height="3.2" rx="0.4" opacity="0.95"/>
+                <rect x="238" y="95" width="3.2" height="3.2" rx="0.4" opacity="0.6"/><rect x="245" y="95" width="3.2" height="3.2" rx="0.4" opacity="0.9"/><rect x="252" y="95" width="3.2" height="3.2" rx="0.4" opacity="0.55"/>
+                <rect x="238" y="110" width="3.2" height="3.2" rx="0.4" opacity="0.8"/><rect x="245" y="110" width="3.2" height="3.2" rx="0.4" opacity="0.5"/><rect x="252" y="110" width="3.2" height="3.2" rx="0.4" opacity="0.85"/>
+                <rect x="238" y="125" width="3.2" height="3.2" rx="0.4" opacity="0.95"/><rect x="245" y="125" width="3.2" height="3.2" rx="0.4" opacity="0.7"/><rect x="252" y="125" width="3.2" height="3.2" rx="0.4" opacity="0.6"/>
+                <rect x="238" y="140" width="3.2" height="3.2" rx="0.4" opacity="0.55"/><rect x="245" y="140" width="3.2" height="3.2" rx="0.4" opacity="0.9"/><rect x="252" y="140" width="3.2" height="3.2" rx="0.4" opacity="0.75"/>
+                <rect x="238" y="155" width="3.2" height="3.2" rx="0.4" opacity="0.8"/><rect x="245" y="155" width="3.2" height="3.2" rx="0.4" opacity="0.65"/><rect x="252" y="155" width="3.2" height="3.2" rx="0.4" opacity="0.95"/>
+                <rect x="238" y="170" width="3.2" height="3.2" rx="0.4" opacity="0.7"/><rect x="245" y="170" width="3.2" height="3.2" rx="0.4" opacity="0.85"/><rect x="252" y="170" width="3.2" height="3.2" rx="0.4" opacity="0.5"/>
+                <rect x="238" y="185" width="3.2" height="3.2" rx="0.4" opacity="0.9"/><rect x="245" y="185" width="3.2" height="3.2" rx="0.4" opacity="0.55"/><rect x="252" y="185" width="3.2" height="3.2" rx="0.4" opacity="0.8"/>
+              </g>
+              <g fill="#f6bcb0">
+                <rect x="274" y="95" width="3" height="3" rx="0.4" opacity="0.8"/><rect x="280" y="95" width="3" height="3" rx="0.4" opacity="0.9"/><rect x="286" y="95" width="3" height="3" rx="0.4" opacity="0.6"/>
+                <rect x="274" y="110" width="3" height="3" rx="0.4" opacity="0.7"/><rect x="280" y="110" width="3" height="3" rx="0.4" opacity="0.55"/><rect x="286" y="110" width="3" height="3" rx="0.4" opacity="0.85"/>
+                <rect x="274" y="125" width="3" height="3" rx="0.4" opacity="0.95"/><rect x="280" y="125" width="3" height="3" rx="0.4" opacity="0.7"/><rect x="286" y="125" width="3" height="3" rx="0.4" opacity="0.5"/>
+                <rect x="274" y="140" width="3" height="3" rx="0.4" opacity="0.6"/><rect x="280" y="140" width="3" height="3" rx="0.4" opacity="0.9"/><rect x="286" y="140" width="3" height="3" rx="0.4" opacity="0.75"/>
+                <rect x="274" y="155" width="3" height="3" rx="0.4" opacity="0.85"/><rect x="280" y="155" width="3" height="3" rx="0.4" opacity="0.55"/><rect x="286" y="155" width="3" height="3" rx="0.4" opacity="0.9"/>
+                <rect x="274" y="170" width="3" height="3" rx="0.4" opacity="0.5"/><rect x="280" y="170" width="3" height="3" rx="0.4" opacity="0.8"/><rect x="286" y="170" width="3" height="3" rx="0.4" opacity="0.65"/>
+                <rect x="274" y="185" width="3" height="3" rx="0.4" opacity="0.9"/><rect x="280" y="185" width="3" height="3" rx="0.4" opacity="0.7"/><rect x="286" y="185" width="3" height="3" rx="0.4" opacity="0.85"/>
+              </g>
+            </g>
+            <ellipse cx="246" cy="70" rx="78" ry="14" fill="url(#skyparkG)" stroke="rgba(159,153,209,0.45)" stroke-width="1"/>
+            <ellipse cx="246" cy="66" rx="62" ry="8" fill="rgba(219,170,215,0.25)"/>
+            <path d="M180 68 Q246 52 312 68" fill="none" stroke="#fff" stroke-width="1.5" opacity="0.55" stroke-linecap="round"/>
+            <ellipse cx="270" cy="68" rx="10" ry="3" fill="#86bada" opacity="0.45"/>
+          </g>
+          <g transform="translate(78,155)">
+            <path d="M0 45 Q-8 10 -28 0 Q-12 18 -5 45" fill="url(#lotusPetal)" stroke="rgba(200,210,230,0.6)" stroke-width="0.6" opacity="0.95"/>
+            <path d="M4 45 Q0 5 -12 -18 Q8 5 10 45" fill="url(#lotusPetal)" stroke="rgba(200,210,230,0.6)" stroke-width="0.6"/>
+            <path d="M12 45 Q18 -5 8 -28 Q22 0 20 45" fill="url(#lotusPetal)" stroke="rgba(200,210,230,0.55)" stroke-width="0.6"/>
+            <path d="M22 45 Q38 -8 48 -5 Q36 15 28 45" fill="url(#lotusPetal)" stroke="rgba(200,210,230,0.55)" stroke-width="0.6"/>
+            <path d="M28 45 Q50 8 58 22 Q45 30 32 45" fill="url(#lotusPetal)" stroke="rgba(200,210,230,0.5)" stroke-width="0.6" opacity="0.95"/>
+            <path d="M-2 45 Q-30 20 -38 35 Q-22 38 2 45" fill="url(#lotusPetal)" stroke="rgba(200,210,230,0.5)" stroke-width="0.6" opacity="0.9"/>
+            <ellipse cx="14" cy="42" rx="22" ry="10" fill="#fff" opacity="0.9"/>
+            <ellipse cx="14" cy="40" rx="14" ry="6" fill="#e8f0f8" opacity="0.8"/>
+            <ellipse cx="14" cy="30" rx="20" ry="16" fill="#fff" opacity="0.15" filter="url(#softGlow)"/>
+          </g>
+          <path d="M40 40 Q100 28 180 42" fill="none" stroke="#fff" stroke-width="2" opacity="0.28" stroke-linecap="round"/>
+        </g>
+        <style>
+          @keyframes winPulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.72; } }
+          .win-pulse { animation: winPulse 3.2s ease-in-out infinite; }
+        </style>
+      </svg>
+    </div>
+    <div class="hero-copy">
+      <h1 id="hero-title">新加坡行程 · 2026/11/9–11/13</h1>
+      <p class="sub">3 人 · 5 天 4 夜 · Bugis Social</p>
+      <div class="countdown" id="countdown" aria-live="polite" aria-atomic="true">
+        <div class="countdown-unit"><div class="num" id="cd-d">--</div><div class="label">天</div></div>
+        <div class="countdown-unit"><div class="num" id="cd-h">--</div><div class="label">時</div></div>
+        <div class="countdown-unit"><div class="num" id="cd-m">--</div><div class="label">分</div></div>
+        <div class="countdown-unit"><div class="num" id="cd-s">--</div><div class="label">秒</div></div>
+      </div>
+      <div class="countdown-status" id="countdownStatus" role="status"></div>
+      <p style="margin-top:14px;font-size:0.82rem;color:var(--text-muted);">倒數至桃園起飛 · 2026/11/9 08:25（UTC+8）</p>
+    </div>
+  </section>
+
+  <!-- ===== FLIGHTS ===== -->
+  <section id="flights" aria-labelledby="flights-title">
+    <div class="section-head">
+      <div class="icon-chip" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M3 13l7-1 4-7 2 1-2 6 6 2-1 2-7-1-4 5H6l2-5-5-1z" fill="#9f99d1"/><path d="M3 13l7-1 4-7 2 1-2 6 6 2-1 2-7-1-4 5H6l2-5-5-1z" stroke="#86bada" stroke-width="0.8" opacity="0.6"/></svg>
+      </div>
+      <h2 id="flights-title">航班</h2>
+    </div>
+    <div class="flight-grid">
+      <article class="flight-card glass out">
+        <div class="flight-tag">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 13l7-1 4-7 2 1-2 6 6 2-1 2-7-1-4 5H6l2-5-5-1z" fill="#9f99d1"/></svg>
+          去程 · 星宇航空
+        </div>
+        <div class="flight-route">
+          <div class="flight-city">
+            <div class="code">TPE</div>
+            <div class="time">08:25</div>
+            <div class="meta">桃園 T2 · 11/9</div>
+          </div>
+          <div class="flight-arrow" aria-hidden="true">
+            <svg viewBox="0 0 48 24"><path d="M2 12h36" stroke="#9f99d1" stroke-width="2" stroke-linecap="round"/><path d="M32 6l10 6-10 6" fill="none" stroke="#86bada" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="flight-city to">
+            <div class="code">SIN</div>
+            <div class="time">13:25</div>
+            <div class="meta">樟宜 T2 · 11/9</div>
+          </div>
+        </div>
+        <div class="flight-info">
+          <span><strong>JX771</strong></span>
+          <span>訂位 <strong>DXKXP8</strong></span>
+          <span>3 人</span>
+          <span>託運 23kg×1</span>
+          <span>手提 7kg</span>
+        </div>
+      </article>
+      <article class="flight-card glass in">
+        <div class="flight-tag">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11l-7 1-4 7-2-1 2-6-6-2 1-2 7 1 4-5h2l-2 5 5 1z" fill="#86bada"/></svg>
+          回程 · 星宇航空
+        </div>
+        <div class="flight-route">
+          <div class="flight-city">
+            <div class="code">SIN</div>
+            <div class="time">14:45</div>
+            <div class="meta">樟宜 T2 · 11/13</div>
+          </div>
+          <div class="flight-arrow" aria-hidden="true">
+            <svg viewBox="0 0 48 24"><path d="M2 12h36" stroke="#86bada" stroke-width="2" stroke-linecap="round"/><path d="M32 6l10 6-10 6" fill="none" stroke="#9f99d1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="flight-city to">
+            <div class="code">TPE</div>
+            <div class="time">19:25</div>
+            <div class="meta">桃園 T2 · 11/13</div>
+          </div>
+        </div>
+        <div class="flight-info">
+          <span><strong>JX772</strong></span>
+          <span>訂位 <strong>DXKXP8</strong></span>
+          <span>3 人</span>
+          <span>約 4.5 小時</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== DAYS ===== -->
+  <section id="days" aria-labelledby="days-title">
+    <div class="section-head">
+      <div class="icon-chip" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="3" fill="#86bada" opacity="0.45"/><rect x="3" y="5" width="18" height="5" rx="2" fill="#9f99d1" opacity="0.7"/><circle cx="8" cy="15" r="1.5" fill="#dbaad7"/><circle cx="12" cy="15" r="1.5" fill="#f6bcb0"/><circle cx="16" cy="15" r="1.5" fill="#ffe3b3"/></svg>
+      </div>
+      <h2 id="days-title">每日行程</h2>
+    </div>
+
+    <div class="day-switcher" role="tablist" aria-label="選擇日期" id="daySwitcher">
+      <button type="button" class="day-pill active" role="tab" aria-selected="true" aria-controls="day1" id="tab-d1" data-day="1">
+        <div class="d-label">Day 1</div>
+        <div class="d-date">11/9 一</div>
+      </button>
+      <button type="button" class="day-pill" role="tab" aria-selected="false" aria-controls="day2" id="tab-d2" data-day="2">
+        <div class="d-label">Day 2</div>
+        <div class="d-date">11/10 二</div>
+      </button>
+      <button type="button" class="day-pill" role="tab" aria-selected="false" aria-controls="day3" id="tab-d3" data-day="3">
+        <div class="d-label">Day 3</div>
+        <div class="d-date">11/11 三</div>
+      </button>
+      <button type="button" class="day-pill" role="tab" aria-selected="false" aria-controls="day4" id="tab-d4" data-day="4">
+        <div class="d-label">Day 4</div>
+        <div class="d-date">11/12 四</div>
+      </button>
+      <button type="button" class="day-pill" role="tab" aria-selected="false" aria-controls="day5" id="tab-d5" data-day="5">
+        <div class="d-label">Day 5</div>
+        <div class="d-date">11/13 五</div>
+      </button>
+    </div>
+
+    <!-- Day 1 -->
+    <div class="day-panel glass active" role="tabpanel" id="day1" aria-labelledby="tab-d1">
+      <div class="day-title">Day 1 · 小印度 → 甘榜格南</div>
+      <p class="day-desc">11/9（一）屠妖節補假國定假日 · 抵達日</p>
+      <ol class="timeline">
+        <li class="tl-item">
+          <div class="tl-time">13:25</div>
+          <div class="tl-title">
+            <button type="button" class="tl-place" data-place="jewel">抵達樟宜 T2（JX771） <span class="cue">詳情</span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          </div>
+          <p class="tl-note">入境＋領行李（台灣護照可走自動通關）</p>
+        </li>
+        <li class="tl-item">
+          <div class="tl-time">14:30</div>
+          <div class="tl-title">
+            <button type="button" class="tl-place" data-place="bugis">機場 → 飯店 Bugis Social <span class="cue">詳情</span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          </div>
+          <p class="tl-note">Grab 約 18–25 分、S$25–40；或搭 MRT</p>
+          <div class="tl-tags"><span class="badge tag-grab">Grab</span><span class="badge tag-mrt">MRT</span></div>
+        </li>
+        <li class="tl-item">
+          <div class="tl-time">15:00</div>
+          <div class="tl-title">
+            <button type="button" class="tl-place" data-place="bugis">Check-in <span class="cue">詳情</span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          </div>
+          <p class="tl-note">Bugis Social · 無電梯，可寄放行李</p>
+        </li>
+        <li class="tl-item">
+          <div class="tl-time">15:45</div>
+          <div class="tl-title">
+            <button type="button" class="tl-place" data-place="littleindia">前往小印度 <span class="cue">詳情</span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          </div>
+          <div class="tl-tags"><span class="badge tag-mrt">MRT</span><span class="badge tag-walk">走路</span></div>
+        </li>
+        <li class="tl-item">
+          <div class="tl-time">16:00</div>
+          <div class="tl-title">
+            <button type="button" class="tl-place" data-place="littleindia">小印度散步 <span class="badge badge-must">必去</span> <span class="cue">詳情</span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          </div>
+          <p class="tl-note">Tekka、Serangoon、彩色房子、Mustafa · 屠妖節補假人多 ⚠️</p>
+          <div class="tl-tags"><span class="badge tag-walk">走路</span></div>
+        </li>
+        <li class="tl-item">
+          <div class="tl-time">17:00</div>
+          <div class="tl-title">
+            <button type="button" class="tl-place" data-place="sri">維拉瑪卡里雅曼興都廟 <span class="badge badge-must">必去</span> <span class="cue">詳情</span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          </div>
+        </li>
+        <li class="tl-item">
+          <div class="tl-time">17:45</div>
+          <div class="tl-title">早晚餐：印度菜</div>
+          <p class="tl-note">Bismillah / Muthu's / Lagnaa / Delhi Lahori 擇一</p>
+        </li>
+        <li class="tl-item">
+          <div class="tl-time">20:00</div>
+          <div class="tl-title">
+            <button type="button" class="tl-place" data-place="kampong">甘榜格南、哈芝巷、蘇丹回教堂夜景 <span class="badge badge-must">必去</span> <span class="cue">詳情</span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          </div>
+          <p class="tl-note">推薦 · 近飯店，步行可達</p>
+          <div class="tl-tags"><span class="badge tag-walk">走路</span></div>
+        </li>
+        <li class="tl-item">
+          <div class="tl-time">選擇性</div>
+          <div class="tl-title">
+            <button type="button" class="tl-place" data-place="littleindia">屠妖節燈飾 Serangoon Road <span class="cue">詳情</span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          </div>
+          <p class="tl-note">19:00–24:00 點燈（至 11/29）</p>
+          <div class="tl-tags"><span class="badge tag-optional">選擇性</span></div>
+        </li>
+      </ol>
+    </div>
+
+    <!-- Day 2 -->
+    <div class="day-panel glass" role="tabpanel" id="day2" aria-labelledby="tab-d2">
+      <div class="day-title">Day 2 · 濱海灣花園 → 加東 → 夜景</div>
+      <p class="day-desc">11/10（二）· 花園雙館＋經典夜景</p>
+      <ol class="timeline">
+        <li class="tl-item">
+          <div class="tl-time">09:00</div>
+          <div class="tl-title">
+            <button type="button" class="tl-place" data-place="yakun">亞坤咖椰吐司 <span class="cue">詳情</span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          </div>
+          <p class="tl-note">Bugis Junction</p>
+          <div class="tl-tags"><span class="badge tag-walk">走路</span></div>
+        </li>
+        <li class="tl-item">
+          <div class="tl-time">10:15</div>
+          <div class="tl-title">
+            <button type="button" class="tl-place" data-place="gardens">花穹＋雲霧林 <span class="badge badge-must">必去</span> <span class="cue">詳情</span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          </div>
+          <p class="tl-note">濱海灣花園 · 雙館約 S$46 · 擎天樹／金沙區</p>
+          <div class="tl-tags"><span class="badge tag-mrt">MRT</span></div>
+        </li>
+        <li class="tl-item">
+          <div class="tl-time">13:00</div>
+          <div class="tl-title">
+            <button type="button" class="tl-place" data-place="laksa">328 加東叻沙 <span class="badge badge-must">必去</span> <span class="cue">詳情</span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          </div>
+          <div class="tl-tags"><span class="badge tag-mrt">MRT</span><span class="badge tag-grab">Grab</span></div>
+        </li>
+        <li class="tl-item">
+          <div class="tl-time">13:45</div>
+          <div class="tl-title">
+            <button type="button" class="tl-place" data-place="koonseng">Koon Seng 娘惹排屋＋金珠娘惹粿 <span class="badge badge-must">必去</span> <span class="cue">詳情</span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          </div>
+          <p class="tl-note">加東／如切彩色排屋（推薦）</p>
+          <div class="tl-tags"><span class="badge tag-walk">走路</span></div>
+        </li>
+        <li class="tl-item">
+          <div class="tl-time">15:00</div>
+          <div class="tl-title">回飯店休息</div>
+          <div class="tl-tags"><span class="badge tag-mrt">MRT</span><span class="badge tag-grab">Grab</span></div>
+        </li>
+        <li class="tl-item">
+          <div class="tl-time">18:00</div>
+          <div class="tl-title">
+            <button type="button" class="tl-place" data-place="mbs">Rasapura Masters 簡餐 <span class="cue">詳情</span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          </div>
+          <p class="tl-note">濱海灣金沙購物中心</p>
+        </li>
+        <li class="tl-item">
+          <div class="tl-time">19:45</div>
+          <div class="tl-title">
+            <button type="button" class="tl-place" data-place="gardens">Garden Rhapsody 擎天樹燈光秀 <span class="badge badge-must">必去</span> <span class="cue">詳情</span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          </div>
+          <p class="tl-note">免費 · 濱海灣花園</p>
+        </li>
+        <li class="tl-item">
+          <div class="tl-time">21:00</div>
+          <div class="tl-title">
+            <button type="button" class="tl-place" data-place="mbs">Spectra 水舞 <span class="badge badge-must">必去</span> <span class="cue">詳情</span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          </div>
+          <p class="tl-note">免費 · 濱海灣金沙</p>
+        </li>
+        <li class="tl-item">
+          <div class="tl-time">21:15</div>
+          <div class="tl-title">
+            <button type="button" class="tl-place" data-place="merlion">魚尾獅夜景 <span class="badge badge-must">必去</span> <span class="cue">詳情</span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          </div>
+          <div class="tl-tags"><span class="badge tag-walk">走路</span></div>
+        </li>
+        <li class="tl-item">
+          <div class="tl-time">21:45</div>
+          <div class="tl-title">
+            <button type="button" class="tl-place" data-place="laupasat">老巴剎沙嗲街 <span class="badge badge-must">必去</span> <span class="cue">詳情</span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          </div>
+          <div class="tl-tags"><span class="badge tag-walk">走路</span></div>
+        </li>
+      </ol>
+    </div>
+
+    <!-- Day 3 -->
+    <div class="day-panel glass" role="tabpanel" id="day3" aria-labelledby="tab-d3">
+      <div class="day-title">Day 3 · 聖淘沙 → 克拉碼頭</div>
+      <p class="day-desc">11/11（三）· Luge＋海洋館＋海灘（不去環球影城）</p>
+      <ol class="timeline">
+        <li class="tl-item">
+          <div class="tl-time">10:30</div>
+          <div class="tl-title">
+            <button type="button" class="tl-place" data-place="luge">Sentosa Express 進島 <span class="badge badge-must">必去</span> <span class="cue">詳情</span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          </div>
+          <p class="tl-note">聖淘沙 · 本日不含環球影城</p>
+          <div class="tl-tags"><span class="badge tag-sentosa">Sentosa Express</span></div>
+        </li>
+        <li class="tl-item">
+          <div class="tl-time">10:45</div>
+          <div class="tl-title">
+            <button type="button" class="tl-place" data-place="luge">Skyline Luge <span class="badge badge-must">必去</span> <span class="cue">詳情</span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          </div>
+          <p class="tl-note">建議事先線上訂時段</p>
+        </li>
+        <li class="tl-item">
+          <div class="tl-time">12:30</div>
+          <div class="tl-title">FEAST at WEAVE 午餐</div>
+        </li>
+        <li class="tl-item">
+          <div class="tl-time">13:30</div>
+          <div class="tl-title">
+            <button type="button" class="tl-place" data-place="oceanarium">新加坡海洋館 S.E.A. Aquarium <span class="badge badge-must">必去</span> <span class="cue">詳情</span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          </div>
+          <p class="tl-note">約 S$55</p>
+        </li>
+        <li class="tl-item">
+          <div class="tl-time">16:30</div>
+          <div class="tl-title">
+            <button type="button" class="tl-place" data-place="beach">西樂索海灘 → 巴拉灣海灘吊橋 <span class="badge badge-must">必去</span> <span class="cue">詳情</span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          </div>
+          <p class="tl-note">約 17:15 到吊橋</p>
+          <div class="tl-tags"><span class="badge tag-walk">走路</span><span class="badge tag-other">島內交通</span></div>
+        </li>
+        <li class="tl-item">
+          <div class="tl-time">18:45</div>
+          <div class="tl-title">
+            <button type="button" class="tl-place" data-place="jumbo">JUMBO 辣椒螃蟹 Riverside Point <span class="badge badge-must">必去</span> <span class="cue">詳情</span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          </div>
+          <p class="tl-note">克拉碼頭 · 務必事先訂位</p>
+          <div class="tl-tags"><span class="badge tag-sentosa">Sentosa Express</span><span class="badge tag-mrt">MRT</span><span class="badge tag-grab">Grab</span></div>
+        </li>
+        <li class="tl-item">
+          <div class="tl-time">20:30</div>
+          <div class="tl-title">
+            <button type="button" class="tl-place" data-place="clarkequay">克拉碼頭夜景／河遊船 <span class="badge badge-must">必去</span> <span class="cue">詳情</span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          </div>
+          <div class="tl-tags"><span class="badge tag-walk">走路</span></div>
+        </li>
+      </ol>
+    </div>
+
+    <!-- Day 4 -->
+    <div class="day-panel glass" role="tabpanel" id="day4" aria-labelledby="tab-d4">
+      <div class="day-title">Day 4 · 牛車水 → 烏節</div>
+      <p class="day-desc">11/12（四）· 老城美食＋購物</p>
+      <ol class="timeline">
+        <li class="tl-item">
+          <div class="tl-time">10:20</div>
+          <div class="tl-title">
+            <button type="button" class="tl-place" data-place="songfa">松發肉骨茶 <span class="badge badge-must">必去</span> <span class="cue">詳情</span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          </div>
+          <div class="tl-tags"><span class="badge tag-mrt">MRT</span></div>
+        </li>
+        <li class="tl-item">
+          <div class="tl-time">11:15</div>
+          <div class="tl-title">
+            <button type="button" class="tl-place" data-place="hillstreet">舊禧街警察局彩虹窗 <span class="badge badge-must">必去</span> <span class="cue">詳情</span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          </div>
+          <p class="tl-note">牛車水 · 打卡經典</p>
+          <div class="tl-tags"><span class="badge tag-walk">走路</span></div>
+        </li>
+        <li class="tl-item">
+          <div class="tl-time">11:45</div>
+          <div class="tl-title">
+            <button type="button" class="tl-place" data-place="buddha">佛牙寺、寶塔街 <span class="badge badge-must">必去</span> <span class="cue">詳情</span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          </div>
+          <p class="tl-note">牛車水核心區</p>
+          <div class="tl-tags"><span class="badge tag-walk">走路</span></div>
+        </li>
+        <li class="tl-item">
+          <div class="tl-time">13:30</div>
+          <div class="tl-title">
+            <button type="button" class="tl-place" data-place="tiantian">天天海南雞飯 Maxwell <span class="badge badge-must">必去</span> <span class="cue">詳情</span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          </div>
+          <p class="tl-note">麥士威小販中心</p>
+        </li>
+        <li class="tl-item">
+          <div class="tl-time">14:45</div>
+          <div class="tl-title">
+            <button type="button" class="tl-place" data-place="orchard">烏節路購物伴手禮 <span class="badge badge-must">必去</span> <span class="cue">詳情</span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          </div>
+          <p class="tl-note">ION、高島屋 · Bengawan Solo／IRVINS／TWG／Bacha 等</p>
+          <div class="tl-tags"><span class="badge tag-mrt">MRT</span></div>
+        </li>
+        <li class="tl-item">
+          <div class="tl-time">18:15</div>
+          <div class="tl-title">
+            <button type="button" class="tl-place" data-place="orchard">聖誕燈飾 <span class="cue">詳情</span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          </div>
+          <p class="tl-note">⚠️ 2026 點燈日官方未定，出發前再查</p>
+          <div class="tl-tags"><span class="badge tag-optional">視情況</span><span class="badge tag-walk">走路</span></div>
+        </li>
+        <li class="tl-item">
+          <div class="tl-time">19:00</div>
+          <div class="tl-title">
+            <button type="button" class="tl-place" data-place="trueblue">True Blue Cuisine 娘惹菜 <span class="cue">詳情</span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          </div>
+          <p class="tl-note">務必事先訂位</p>
+          <div class="tl-tags"><span class="badge tag-grab">Grab</span><span class="badge tag-mrt">MRT</span></div>
+        </li>
+      </ol>
+    </div>
+
+    <!-- Day 5 -->
+    <div class="day-panel glass" role="tabpanel" id="day5" aria-labelledby="tab-d5">
+      <div class="day-title">Day 5 · 回程</div>
+      <p class="day-desc">11/13（五）· 退房＋樟宜</p>
+      <ol class="timeline">
+        <li class="tl-item">
+          <div class="tl-time">09:00</div>
+          <div class="tl-title">
+            <button type="button" class="tl-place" data-place="yakun">悠閒早餐 <span class="cue">詳情</span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          </div>
+          <p class="tl-note">飯店附近或 Bugis Junction</p>
+        </li>
+        <li class="tl-item">
+          <div class="tl-time">10:45</div>
+          <div class="tl-title">
+            <button type="button" class="tl-place" data-place="bugis">Check-out <span class="cue">詳情</span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          </div>
+          <p class="tl-note">退房時間 12:00 前 · 可寄放行李</p>
+        </li>
+        <li class="tl-item">
+          <div class="tl-time">11:15</div>
+          <div class="tl-title">
+            <button type="button" class="tl-place" data-place="jewel">Grab → 樟宜 T2 <span class="cue">詳情</span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          </div>
+          <p class="tl-note">建議 11:45 前到機場</p>
+          <div class="tl-tags"><span class="badge tag-grab">Grab</span></div>
+        </li>
+        <li class="tl-item">
+          <div class="tl-time">選擇性</div>
+          <div class="tl-title">
+            <button type="button" class="tl-place" data-place="jewel">Jewel 雨漩渦、退稅、伴手禮 <span class="cue">詳情</span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          </div>
+          <p class="tl-note">星耀樟宜 · 出境前可補買 Bengawan Solo／IRVINS 等</p>
+          <div class="tl-tags"><span class="badge tag-optional">選擇性</span></div>
+        </li>
+        <li class="tl-item">
+          <div class="tl-time">14:45</div>
+          <div class="tl-title">JX772 起飛 → 19:25 桃園 T2</div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ===== TODO ===== -->
+  <section id="todo" aria-labelledby="todo-title">
+    <div class="section-head">
+      <div class="icon-chip" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="3" fill="#ffe3b3" opacity="0.7"/><path d="M8 12l2.5 2.5L16 9" stroke="#9f99d1" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 6h8" stroke="#dbaad7" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </div>
+      <h2 id="todo-title">待辦清單</h2>
+    </div>
+    <div class="glass todo-list" id="todoList">
+      <div class="todo-group">
+        <h3>出發前必辦</h3>
+        <label class="todo-item"><input type="checkbox" data-id="sg-card"><span>填寫 SG Arrival Card（11/7 起可填，免費走 ICA 官網／MyICA）</span></label>
+        <label class="todo-item"><input type="checkbox" data-id="book-luge"><span>訂 Skyline Luge 時段（Day 3）</span></label>
+        <label class="todo-item"><input type="checkbox" data-id="book-jumbo"><span>訂 JUMBO Riverside Point（Day 3 辣椒蟹）</span></label>
+        <label class="todo-item"><input type="checkbox" data-id="book-trueblue"><span>訂 True Blue Cuisine（Day 4 娘惹菜）</span></label>
+        <label class="todo-item"><input type="checkbox" data-id="passport"><span>護照（效期 6 個月以上）</span></label>
+        <label class="todo-item"><input type="checkbox" data-id="confirm"><span>機票、住宿訂位確認（截圖或列印）</span></label>
+        <label class="todo-item"><input type="checkbox" data-id="insurance"><span>旅遊平安險／不便險保單</span></label>
+      </div>
+      <div class="todo-group">
+        <h3>攜帶物品</h3>
+        <label class="todo-item"><input type="checkbox" data-id="card-tap"><span>感應信用卡（搭 MRT／公車 SimplyGo）</span></label>
+        <label class="todo-item"><input type="checkbox" data-id="cash"><span>新加坡幣現金零錢（小販中心）</span></label>
+        <label class="todo-item"><input type="checkbox" data-id="typeg"><span>英式 Type G 轉接頭</span></label>
+        <label class="todo-item"><input type="checkbox" data-id="powerbank"><span>行動電源（僅能放手提）</span></label>
+        <label class="todo-item"><input type="checkbox" data-id="cables"><span>充電線</span></label>
+        <label class="todo-item"><input type="checkbox" data-id="esim"><span>eSIM／網卡（預裝 Grab、Google Maps、MyICA、Changi App）</span></label>
+        <label class="todo-item"><input type="checkbox" data-id="umbrella"><span>摺疊傘／輕便雨衣（11 月午後常雷雨）</span></label>
+        <label class="todo-item"><input type="checkbox" data-id="sunscreen"><span>防曬</span></label>
+        <label class="todo-item"><input type="checkbox" data-id="jacket"><span>薄外套（室內冷氣強）</span></label>
+        <label class="todo-item"><input type="checkbox" data-id="mozzie"><span>防蚊液</span></label>
+        <label class="todo-item"><input type="checkbox" data-id="meds"><span>常備藥</span></label>
+        <label class="todo-item"><input type="checkbox" data-id="wipes"><span>濕紙巾／面紙</span></label>
+        <label class="todo-item"><input type="checkbox" data-id="bottle"><span>環保水瓶（自來水可飲用）</span></label>
+      </div>
+      <div class="todo-warn" role="note">❌ 不要帶：口香糖、電子菸（含菸彈）、煙火。新加坡電子菸罰則極重。</div>
+    </div>
+  </section>
+
+  <!-- ===== HOTEL ===== -->
+  <section id="hotel" aria-labelledby="hotel-title">
+    <div class="section-head">
+      <div class="icon-chip" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M4 20V9l8-5 8 5v11H4z" fill="#86bada" opacity="0.4"/><path d="M9 20v-6h6v6" fill="#9f99d1" opacity="0.7"/><rect x="10" y="11" width="4" height="3" rx="0.5" fill="#dbaad7"/></svg>
+      </div>
+      <h2 id="hotel-title">住宿</h2>
+    </div>
+    <article class="hotel-card glass">
+      <div class="hotel-icon" aria-hidden="true">
+        <svg viewBox="0 0 48 48">
+          <defs>
+            <linearGradient id="hotG" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#9f99d1"/><stop offset="100%" stop-color="#86bada"/>
+            </linearGradient>
+          </defs>
+          <rect x="8" y="16" width="32" height="24" rx="4" fill="url(#hotG)" opacity="0.55"/>
+          <path d="M6 18 L24 6 L42 18" fill="none" stroke="#dbaad7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="20" y="28" width="8" height="12" rx="1" fill="#fff" opacity="0.8"/>
+          <rect x="12" y="22" width="6" height="5" rx="1" fill="#ffe3b3" opacity="0.8"/>
+          <rect x="30" y="22" width="6" height="5" rx="1" fill="#f6bcb0" opacity="0.8"/>
+        </svg>
+      </div>
+      <div>
+        <h3>Bugis Social</h3>
+        <div class="hotel-meta">
+          <div>📍 166A Rochor Road, Level 2, Singapore 188441</div>
+          <div>📞 <a href="tel:+6583501834">+65 8350 1834</a></div>
+          <div>🚇 Bugis 站對面 C 出口</div>
+          <div>🗺 <a href="https://maps.app.goo.gl/jZe7PRce4UkUYE738" target="_blank" rel="noopener noreferrer">在 Google Maps 開啟</a></div>
+        </div>
+        <div class="hotel-chips">
+          <span class="badge">入住 15:00</span>
+          <span class="badge">退房 12:00</span>
+          <span class="badge">可寄放行李</span>
+          <span class="badge">無電梯</span>
+          <span class="badge">近哈芝巷</span>
+          <span class="badge">近 Bugis Junction</span>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer glass" id="notes">
+    <h3>緊急電話</h3>
+    <ul>
+      <li>警察 <strong>999</strong></li>
+      <li>救護車／消防 <strong>995</strong></li>
+      <li>駐新加坡台北代表處急難救助 <strong>+65 9638-9436</strong>（可 WhatsApp）</li>
+    </ul>
+    <h3>小提醒</h3>
+    <ul>
+      <li>MRT／車站內禁止飲食（含水），最高罰 S$500</li>
+      <li>勿帶口香糖、電子菸入境</li>
+      <li>11 月午後常有雷陣雨，戶外行程建議排上午</li>
+      <li>與台灣無時差（UTC+8）</li>
+    </ul>
+    <p class="disclaimer">價格與營業時間約依 2026/10/23 公開資料查證，到現場可能變動，請以現場標價與公告為準。本頁不含電子機票票號與護照等個資；訂位代號僅供行程對照。</p>
+  </footer>
+
+</main>
+
+
+<!-- Place detail overlay -->
+<div class="place-overlay" id="placeOverlay" aria-hidden="true">
+  <div class="place-sheet" role="dialog" aria-modal="true" aria-labelledby="placeTitle" id="placeSheet" tabindex="-1">
+    <div class="place-handle" aria-hidden="true"></div>
+    <div class="place-sheet-head">
+      <h2 id="placeTitle">景點</h2>
+      <button type="button" class="place-close" id="placeClose" aria-label="關閉">×</button>
+    </div>
+    <p class="place-intro" id="placeIntro"></p>
+    <div class="place-practical" id="placePractical"></div>
+    <a class="place-maps" id="placeMaps" href="#" target="_blank" rel="noopener noreferrer">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5c-1.4 0-2.5-1.1-2.5-2.5S10.6 6.5 12 6.5s2.5 1.1 2.5 2.5S13.4 11.5 12 11.5z" fill="#3a5a8a"/></svg>
+      在 Google Maps 開啟
+    </a>
+  </div>
+</div>
+
+<script>
+(function () {
+  'use strict';
+
+  /* —— Reduced motion —— */
+  var html = document.documentElement;
+  var motionBtn = document.getElementById('motionToggle');
+  var STORAGE_MOTION = 'sg-trip-reduce-motion';
+  var STORAGE_TODO = 'sg-trip-todos-v1';
+
+  function applyMotion(reduce) {
+    html.classList.toggle('reduce-motion', reduce);
+    if (motionBtn) {
+      motionBtn.setAttribute('aria-pressed', reduce ? 'true' : 'false');
+      motionBtn.textContent = reduce ? '開啟動態效果' : '減少動態效果';
+    }
+  }
+
+  var preferReduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var storedMotion = localStorage.getItem(STORAGE_MOTION);
+  var reduce = storedMotion === null ? preferReduce : storedMotion === '1';
+  applyMotion(reduce);
+
+  if (motionBtn) {
+    motionBtn.addEventListener('click', function () {
+      var next = !html.classList.contains('reduce-motion');
+      applyMotion(next);
+      localStorage.setItem(STORAGE_MOTION, next ? '1' : '0');
+    });
+  }
+
+  /* —— Mobile nav —— */
+  var navToggle = document.getElementById('navToggle');
+  var navLinks = document.getElementById('navLinks');
+  if (navToggle && navLinks) {
+    navToggle.addEventListener('click', function () {
+      var open = navLinks.classList.toggle('open');
+      navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      navToggle.setAttribute('aria-label', open ? '關閉選單' : '開啟選單');
+    });
+    navLinks.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', function () {
+        navLinks.classList.remove('open');
+        navToggle.setAttribute('aria-expanded', 'false');
+        navToggle.setAttribute('aria-label', '開啟選單');
+      });
+    });
+  }
+
+  /* —— Countdown —— */
+  var DEPART = new Date('2026-11-09T08:25:00+08:00').getTime();
+  var RETURN = new Date('2026-11-13T19:25:00+08:00').getTime();
+  var cdEl = document.getElementById('countdown');
+  var cdStatus = document.getElementById('countdownStatus');
+  var elD = document.getElementById('cd-d');
+  var elH = document.getElementById('cd-h');
+  var elM = document.getElementById('cd-m');
+  var elS = document.getElementById('cd-s');
+
+  function pad(n) { return n < 10 ? '0' + n : String(n); }
+
+  function tick() {
+    var now = Date.now();
+    if (now >= RETURN) {
+      cdEl.style.display = 'none';
+      cdStatus.style.display = 'inline-block';
+      cdStatus.textContent = '已結束 · 歡迎下次再出發';
+      return;
+    }
+    if (now >= DEPART) {
+      cdEl.style.display = 'none';
+      cdStatus.style.display = 'inline-block';
+      cdStatus.textContent = '旅途進行中 ✈️';
+      return;
+    }
+    var diff = DEPART - now;
+    var d = Math.floor(diff / 86400000);
+    var h = Math.floor((diff % 86400000) / 3600000);
+    var m = Math.floor((diff % 3600000) / 60000);
+    var s = Math.floor((diff % 60000) / 1000);
+    elD.textContent = String(d);
+    elH.textContent = pad(h);
+    elM.textContent = pad(m);
+    elS.textContent = pad(s);
+  }
+  tick();
+  setInterval(tick, 1000);
+
+  /* —— Day tabs —— */
+  var pills = Array.prototype.slice.call(document.querySelectorAll('.day-pill'));
+  var panels = Array.prototype.slice.call(document.querySelectorAll('.day-panel'));
+
+  function showDay(day, animate) {
+    day = String(day);
+    pills.forEach(function (p) {
+      var on = p.getAttribute('data-day') === day;
+      p.classList.toggle('active', on);
+      p.setAttribute('aria-selected', on ? 'true' : 'false');
+      p.setAttribute('tabindex', on ? '0' : '-1');
+      if (on && animate && !html.classList.contains('reduce-motion')) {
+        p.classList.remove('bounce');
+        void p.offsetWidth;
+        p.classList.add('bounce');
+      }
+    });
+    panels.forEach(function (panel) {
+      var on = panel.id === 'day' + day;
+      panel.classList.toggle('active', on);
+      if (on) {
+        if (animate && !html.classList.contains('reduce-motion')) {
+          panel.classList.remove('enter');
+          void panel.offsetWidth;
+          panel.classList.add('enter');
+        }
+      } else {
+        panel.classList.remove('enter');
+      }
+    });
+  }
+
+  pills.forEach(function (p) {
+    p.setAttribute('tabindex', p.classList.contains('active') ? '0' : '-1');
+    p.addEventListener('click', function () {
+      showDay(p.getAttribute('data-day'), true);
+    });
+    p.addEventListener('keydown', function (e) {
+      var idx = pills.indexOf(p);
+      if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+        e.preventDefault();
+        var next = pills[(idx + 1) % pills.length];
+        next.focus();
+        showDay(next.getAttribute('data-day'), true);
+      } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+        e.preventDefault();
+        var prev = pills[(idx - 1 + pills.length) % pills.length];
+        prev.focus();
+        showDay(prev.getAttribute('data-day'), true);
+      } else if (e.key === 'Home') {
+        e.preventDefault();
+        pills[0].focus();
+        showDay(1, true);
+      } else if (e.key === 'End') {
+        e.preventDefault();
+        pills[pills.length - 1].focus();
+        showDay(5, true);
+      }
+    });
+  });
+
+
+  /* —— Place details (official cards from travel planner) —— */
+  var PLACES = {
+    jewel: {
+      name: '樟宜機場／星耀樟宜 Jewel Changi',
+      intro: '新加坡的國際門戶，與機場航廈相連的星耀樟宜有全球最高的室內瀑布「雨漩渦」和森林谷。回程時可以在這裡買伴手禮、吃最後一餐。',
+      practical: '雨漩渦 10:00–22:00；從 T2 步行約 10 分鐘。回程 11/13 14:45 起飛，建議 11:45 前到機場，報到後再去逛。',
+      maps: 'https://www.google.com/maps/search/?api=1&query=Jewel%20Changi%20Airport%20Singapore'
+    },
+    bugis: {
+      name: 'Bugis Social（住宿）',
+      intro: '位在武吉士的平價精品住宿，走路就能到甘榜格南、哈芝巷和小印度，附近吃的很多。',
+      practical: '166A Rochor Rd L2；+65 8350 1834；武吉士 MRT（EW12/DT14）C 出口約 1 分鐘。入住 15:00／退房 12:00。⚠️ 沒有電梯，大行李要自己扛上樓。',
+      maps: 'https://maps.app.goo.gl/jZe7PRce4UkUYE738'
+    },
+    littleindia: {
+      name: '小印度／實龍崗路／竹腳中心',
+      intro: '新加坡的印度社區，街上有香料店、花環攤和色彩鮮豔的店屋。竹腳中心一樓是熟食中心，可以吃印度煎餅和比爾雅尼飯。',
+      practical: '屠妖節燈飾在實龍崗路，亮到 11/29，每晚 19:00–24:00（白天看不到燈）。Campbell Lane 節日村已在 11/8 結束。',
+      maps: 'https://www.google.com/maps/search/?api=1&query=Tekka%20Centre%20Singapore'
+    },
+    sri: {
+      name: '維拉瑪卡里雅曼興都廟',
+      intro: '小印度最古老的興都廟之一，供奉卡莉女神，塔門上的神像雕刻非常精緻。',
+      practical: '05:30–12:00、17:00–21:00；免費。進入要脫鞋，需遮住肩膀和膝蓋。',
+      maps: 'https://www.google.com/maps/search/?api=1&query=Sri%20Veeramakaliamman%20Temple%20141%20Serangoon%20Road%20Singapore'
+    },
+    kampong: {
+      name: '甘榜格南／哈芝巷／蘇丹回教堂',
+      intro: '過去的馬來皇族區，金色圓頂的蘇丹回教堂是地標。旁邊的哈芝巷滿是塗鴉牆、小店和咖啡館，很好拍照。',
+      practical: '蘇丹回教堂參觀時間：週六至週四 10:00–12:00、14:00–16:00；週五不開放參觀。請穿著端莊。',
+      maps: 'https://www.google.com/maps/search/?api=1&query=Sultan%20Mosque%20Singapore'
+    },
+    yakun: {
+      name: '亞坤 Bugis Junction',
+      intro: '新加坡老字號咖椰吐司連鎖店，經典早餐是咖椰吐司、半熟蛋配咖啡或茶。離飯店很近，適合出門前吃早餐。',
+      practical: 'Bugis Junction #B1-11；07:30–22:00；A 套餐約 S$6.30。',
+      maps: 'https://www.google.com/maps/search/?api=1&query=Ya%20Kun%20Kaya%20Toast%20Bugis%20Junction%20Singapore'
+    },
+    gardens: {
+      name: '濱海灣花園（花穹＋雲霧林＋擎天樹）',
+      intro: '新加坡代表性的花園，花穹有世界各地的花卉，雲霧林有室內瀑布和高山植物。晚上擎天樹的燈光秀免費。',
+      practical: '花穹＋雲霧林 09:00–21:00，非居民成人 S$46。Garden Rhapsody 燈光秀免費，19:45、20:45。11 月下午常有雷陣雨，室內館很適合。',
+      maps: 'https://www.google.com/maps/search/?api=1&query=Gardens%20by%20the%20Bay%20Singapore'
+    },
+    laksa: {
+      name: '328 加東叻沙',
+      intro: '加東叻沙的代表店，湯頭濃郁椰香，麵剪短了直接用湯匙吃。',
+      practical: '每天 09:30–21:30；小碗約 S$6.30；不接受訂位。',
+      maps: 'https://www.google.com/maps/search/?api=1&query=328%20Katong%20Laksa%2051%20East%20Coast%20Road%20Singapore'
+    },
+    koonseng: {
+      name: 'Koon Seng Road 娘惹排屋',
+      intro: '加東一帶的彩色娘惹排屋，粉嫩外牆和精緻磁磚是熱門拍照點。',
+      practical: '都是私人住宅，只能在街上拍照，請勿進入或打擾住戶。',
+      maps: 'https://www.google.com/maps/search/?api=1&query=Koon%20Seng%20Road%20Singapore'
+    },
+    mbs: {
+      name: '濱海灣金沙／Spectra',
+      intro: '新加坡最有名的地標飯店，有購物中心和頂樓空中花園。晚上的 Spectra 水舞燈光秀在活動廣場免費觀賞。',
+      practical: 'Spectra 免費：週日至週四 20:00、21:00，週五、六加演 22:00。SkyPark 觀景台晚上 S$39。',
+      maps: 'https://www.google.com/maps/search/?api=1&query=Marina%20Bay%20Sands%20Singapore'
+    },
+    merlion: {
+      name: '魚尾獅公園',
+      intro: '新加坡的象徵魚尾獅，可以對著濱海灣金沙拍照，夜景特別漂亮。',
+      practical: '戶外免費。建議看完 Spectra 再走過來看夜景。',
+      maps: 'https://www.google.com/maps/search/?api=1&query=Merlion%20Park%20Singapore'
+    },
+    laupasat: {
+      name: '老巴剎沙嗲街',
+      intro: '維多利亞式鑄鐵建築的熟食中心，晚上旁邊的文達街會封街變成沙嗲街，可以邊吃烤肉串邊喝啤酒。',
+      practical: '沙嗲街：平日 19:00–03:00，週末及國定假日 15:00–03:00；約每串 S$0.70–1.00。',
+      maps: 'https://www.google.com/maps/search/?api=1&query=Lau%20Pa%20Sat%20Satay%20Street%20Singapore'
+    },
+    luge: {
+      name: '聖淘沙／Skyline Luge',
+      intro: '聖淘沙是新加坡的度假島。Skyline Luge 是自己控制速度的下坡滑車，搭纜車上山再滑下來，大人小孩都好玩。',
+      practical: '聖淘沙捷運 S$4（含入島費）。Luge Smart Saver：2 趟 S$28／3 趟 S$31（10–12 點時段）。打雷時會暫停營運。',
+      maps: 'https://www.google.com/maps/search/?api=1&query=Skyline%20Luge%20Sentosa'
+    },
+    oceanarium: {
+      name: '新加坡海洋館（原 S.E.A. 海洋館）',
+      intro: '聖淘沙的大型海洋館，有巨大的開放海洋展示缸，可以看到魟魚和鯊魚。',
+      practical: '成人 S$55；10:00–20:00。Open Ocean 潛水員餵食 16:00（週一、週五沒有）。',
+      maps: 'https://www.google.com/maps/search/?api=1&query=Singapore%20Oceanarium%20Sentosa'
+    },
+    beach: {
+      name: '西樂索／巴拉灣海灘',
+      intro: '聖淘沙的海灘，西樂索比較熱鬧，有海灘酒吧；巴拉灣比較適合家庭，有吊橋可以走到小島。',
+      practical: '可搭島上免費接駁車往返。⚠️ 下午常有雷陣雨，請注意天氣、做好防曬。',
+      maps: 'https://www.google.com/maps/search/?api=1&query=Palawan%20Beach%20Sentosa'
+    },
+    jumbo: {
+      name: 'JUMBO Seafood Riverside Point',
+      intro: '新加坡最知名的辣椒螃蟹餐廳之一，臨河景觀。辣椒螃蟹記得加點炸饅頭沾醬吃。',
+      practical: '辣椒螃蟹（泥蟹）S$10.80++／100g，建議提早訂位。東海岸旗艦店已在 2026/9/30 結束營業。',
+      maps: 'https://www.google.com/maps/search/?api=1&query=JUMBO%20Seafood%20Riverside%20Point%20Singapore'
+    },
+    clarkequay: {
+      name: '克拉碼頭',
+      intro: '新加坡河畔的餐廳酒吧區，晚上燈光很熱鬧，也可以搭遊河船。',
+      practical: '戶外免費。⚠️ 酒吧區晚上較吵、價位偏高。',
+      maps: 'https://www.google.com/maps/search/?api=1&query=Clarke%20Quay%20Singapore'
+    },
+    songfa: {
+      name: '松發肉骨茶 New Bridge Road',
+      intro: '米其林必比登推薦的潮州式肉骨茶，胡椒湯頭清爽，可以無限續湯。',
+      practical: '11 New Bridge Rd；肉骨茶約 S$8.80；不接受訂位，用餐時間要排隊。⚠️ 開店時間資料不一（09:30–10:30 之間），出發前請再確認。',
+      maps: 'https://www.google.com/maps/search/?api=1&query=Song%20Fa%20Bak%20Kut%20Teh%2011%20New%20Bridge%20Road%20Singapore'
+    },
+    hillstreet: {
+      name: '舊禧街警察局',
+      intro: '1934 年的歷史建築，927 扇彩色窗戶是網美拍照點。',
+      practical: '140 Hill Street；外觀拍照免費。內部是政府機關，不能隨意進入。',
+      maps: 'https://www.google.com/maps/search/?api=1&query=Old%20Hill%20Street%20Police%20Station%20Singapore'
+    },
+    buddha: {
+      name: '佛牙寺／牛車水',
+      intro: '牛車水是新加坡的華人區，有老店、熟食中心和伴手禮店。佛牙寺是唐式風格的寺廟，內部莊嚴華麗。',
+      practical: '佛牙寺約 07:00–19:00；需穿有袖上衣、過膝下著，現場可借披肩。',
+      maps: 'https://www.google.com/maps/search/?api=1&query=Buddha%20Tooth%20Relic%20Temple%20Singapore'
+    },
+    tiantian: {
+      name: '天天海南雞飯（麥士威熟食中心）',
+      intro: '麥士威熟食中心最有名的海南雞飯攤，米其林必比登推薦，雞肉滑嫩、雞油飯很香。',
+      practical: '週二至週日 10:00–20:00，週一公休；常提早賣完。建議帶現金；小份約 S$5。',
+      maps: 'https://www.google.com/maps/search/?api=1&query=Tian%20Tian%20Hainanese%20Chicken%20Rice%20Maxwell%20Food%20Centre%20Singapore'
+    },
+    orchard: {
+      name: '烏節路／ION Orchard',
+      intro: '新加坡的購物大街，ION Orchard 是代表性的商場，伴手禮店都很好找。',
+      practical: 'ION：梭羅河 B4、TWG #02-21、Bacha #01-15/16。整條烏節路是禁菸區。⚠️ 2026 年聖誕燈飾點燈日期未公布。',
+      maps: 'https://www.google.com/maps/search/?api=1&query=ION%20Orchard%20Singapore'
+    },
+    trueblue: {
+      name: 'True Blue Cuisine',
+      intro: 'Armenian Street 的娘惹菜餐廳，米其林必比登推薦，裝潢充滿土生華人風格。推薦試試黑果雞（Ayam Buah Keluak）。',
+      practical: '建議提早訂位；週日及國定假日公休。',
+      maps: 'https://www.google.com/maps/search/?api=1&query=True%20Blue%20Cuisine%20Armenian%20Street%20Singapore'
+    }
+  };
+
+  var overlay = document.getElementById('placeOverlay');
+  var sheet = document.getElementById('placeSheet');
+  var placeTitle = document.getElementById('placeTitle');
+  var placeIntro = document.getElementById('placeIntro');
+  var placePractical = document.getElementById('placePractical');
+  var placeMaps = document.getElementById('placeMaps');
+  var placeClose = document.getElementById('placeClose');
+  var lastFocus = null;
+
+  function openPlace(id) {
+    var p = PLACES[id];
+    if (!p) return;
+    lastFocus = document.activeElement;
+    placeTitle.textContent = p.name;
+    placeIntro.textContent = p.intro;
+    placePractical.textContent = p.practical;
+    placeMaps.href = p.maps;
+    overlay.classList.add('open');
+    overlay.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('sheet-open');
+    placeClose.focus();
+  }
+
+  function closePlace() {
+    overlay.classList.remove('open');
+    overlay.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('sheet-open');
+    if (lastFocus && typeof lastFocus.focus === 'function') lastFocus.focus();
+  }
+
+  document.querySelectorAll('.tl-place').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      openPlace(btn.getAttribute('data-place'));
+    });
+  });
+  if (placeClose) placeClose.addEventListener('click', closePlace);
+  if (overlay) {
+    overlay.addEventListener('click', function (e) {
+      if (e.target === overlay) closePlace();
+    });
+  }
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && overlay && overlay.classList.contains('open')) {
+      e.preventDefault();
+      closePlace();
+    }
+  });
+  if (sheet) {
+    sheet.addEventListener('keydown', function (e) {
+      if (e.key !== 'Tab' || !overlay.classList.contains('open')) return;
+      var focusables = sheet.querySelectorAll('button, a[href]');
+      if (!focusables.length) return;
+      var first = focusables[0];
+      var last = focusables[focusables.length - 1];
+      if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault();
+        last.focus();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault();
+        first.focus();
+      }
+    });
+  }
+
+  /* —— Todos + localStorage —— */
+  var checks = document.querySelectorAll('#todoList input[type="checkbox"]');
+  var saved = {};
+  try { saved = JSON.parse(localStorage.getItem(STORAGE_TODO) || '{}') || {}; } catch (e) { saved = {}; }
+
+  checks.forEach(function (cb) {
+    var id = cb.getAttribute('data-id');
+    if (saved[id]) {
+      cb.checked = true;
+      cb.closest('.todo-item').classList.add('done');
+    }
+    cb.addEventListener('change', function () {
+      saved[id] = cb.checked;
+      cb.closest('.todo-item').classList.toggle('done', cb.checked);
+      try { localStorage.setItem(STORAGE_TODO, JSON.stringify(saved)); } catch (e) {}
+    });
+  });
+})();
+</script>
+</body>
+</html>
