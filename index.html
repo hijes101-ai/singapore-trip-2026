@@ -635,6 +635,89 @@ html:not(.reduce-motion) .day-panel.active.enter {
   border-color: rgba(255,255,255,0.6);
   box-shadow: 0 2px 8px rgba(246,188,176,0.4);
 }
+
+.badge-buy {
+  background: linear-gradient(135deg, rgba(246,188,176,0.9), rgba(219,170,215,0.75));
+  color: #5a2e2a;
+  border-color: rgba(255,255,255,0.6);
+  box-shadow: 0 2px 8px rgba(246,188,176,0.35);
+}
+.badge-eat {
+  background: linear-gradient(135deg, rgba(134,186,218,0.85), rgba(159,153,209,0.7));
+  color: #1e3a52;
+  border-color: rgba(255,255,255,0.6);
+  box-shadow: 0 2px 8px rgba(134,186,218,0.35);
+}
+
+/* —— Must-buy / Must-eat —— */
+.must-grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 640px) {
+  .must-grid { grid-template-columns: 1fr 1fr; }
+}
+.must-card.tl-place {
+  display: flex;
+  width: 100%;
+  margin: 0;
+  padding: 14px 12px 14px 14px;
+  border-radius: var(--radius-sm);
+  background: rgba(255,255,255,0.28);
+  border: 1px solid var(--glass-border-soft);
+  box-shadow: var(--shadow-sm), inset 0 1px 0 rgba(255,255,255,0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  align-items: center;
+  gap: 8px;
+  max-width: none;
+}
+.must-card.tl-place:hover,
+.must-card.tl-place:focus-visible {
+  background: rgba(255,255,255,0.42);
+  border-color: var(--glass-border-soft);
+  box-shadow: 0 8px 24px rgba(134,186,218,0.28);
+}
+.must-card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+  text-align: left;
+}
+.must-card-title {
+  font-weight: 700;
+  font-size: 0.98rem;
+  line-height: 1.35;
+  color: var(--text);
+}
+.must-card-sub {
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+.must-tip {
+  margin-top: 12px;
+  padding: 14px 16px;
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: var(--text);
+}
+.must-tip ul {
+  margin: 6px 0 0;
+  padding-left: 1.2em;
+}
+.must-tip li { margin: 4px 0; }
+.must-subhead {
+  margin: 18px 2px 10px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+}
 .tag-mrt {
   background: rgba(134,186,218,0.45);
   border-color: rgba(134,186,218,0.5);
@@ -1041,6 +1124,8 @@ html.reduce-motion .win-pulse { animation: none !important; }
       <a href="#home">首頁</a>
       <a href="#flights">航班</a>
       <a href="#days">每日行程</a>
+      <a href="#must-buy">必買</a>
+      <a href="#must-eat">必吃</a>
       <a href="#todo">待辦</a>
       <a href="#hotel">住宿</a>
       <button type="button" class="nav-motion" id="motionToggle" aria-pressed="false" title="切換減少動態效果">減少動態效果</button>
@@ -1611,6 +1696,195 @@ html.reduce-motion .win-pulse { animation: none !important; }
     </div>
   </section>
 
+
+  <!-- ===== MUST BUY ===== -->
+  <section id="must-buy" aria-labelledby="must-buy-title">
+    <div class="section-head">
+      <div class="icon-chip" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><rect x="4" y="7" width="16" height="13" rx="3" fill="#f6bcb0" opacity="0.75"/><path d="M8 7V6a4 4 0 018 0v1" stroke="#dbaad7" stroke-width="1.8" fill="none" stroke-linecap="round"/><circle cx="12" cy="14" r="2" fill="#9f99d1"/></svg>
+      </div>
+      <h2 id="must-buy-title">必買伴手禮</h2>
+    </div>
+    <div class="must-grid">
+      <button type="button" class="tl-place must-card" data-place="bengawan">
+        <span class="must-card-body">
+          <span class="badge badge-buy">必買</span>
+          <span class="must-card-title">Bengawan Solo 梭羅河糕點</span>
+          <span class="must-card-sub">娘惹糕點／千層糕／餅乾禮盒 · 罐約 S$25–28</span>
+        </span>
+        <span class="cue">詳情</span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <button type="button" class="tl-place must-card" data-place="irvins">
+        <span class="must-card-body">
+          <span class="badge badge-buy">必買</span>
+          <span class="must-card-title">IRVINS 鹹蛋魚皮／洋芋片</span>
+          <span class="must-card-sub">適合送同事 · 95g 約 S$8.72、210g 約 S$19</span>
+        </span>
+        <span class="cue">詳情</span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <button type="button" class="tl-place must-card" data-place="twg">
+        <span class="must-card-body">
+          <span class="badge badge-buy">必買</span>
+          <span class="must-card-title">TWG Tea</span>
+          <span class="must-card-sub">漂亮茶罐 · 茶包盒約 S$27.5 起</span>
+        </span>
+        <span class="cue">詳情</span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <button type="button" class="tl-place must-card" data-place="bacha">
+        <span class="must-card-body">
+          <span class="badge badge-buy">必買</span>
+          <span class="must-card-title">Bacha Coffee</span>
+          <span class="must-card-sub">金色包裝精品咖啡 · 濾掛禮盒約 S$29.4 起</span>
+        </span>
+        <span class="cue">詳情</span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <button type="button" class="tl-place must-card" data-place="prima">
+        <span class="must-card-body">
+          <span class="badge badge-buy">必買</span>
+          <span class="must-card-title">Prima Taste 百勝廚</span>
+          <span class="must-card-sub">叻沙拉麵／醬料包 · 4 入約 S$10.80</span>
+        </span>
+        <span class="cue">詳情</span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <button type="button" class="tl-place must-card" data-place="yakun-kaya">
+        <span class="must-card-body">
+          <span class="badge badge-buy">必買</span>
+          <span class="must-card-title">Ya Kun 亞坤咖椰醬</span>
+          <span class="must-card-sub">可帶走的 kaya · 價格⚠️未查證</span>
+        </span>
+        <span class="cue">詳情</span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <button type="button" class="tl-place must-card" data-place="others-buy">
+        <span class="must-card-body">
+          <span class="badge badge-buy">必買</span>
+          <span class="must-card-title">其他可考慮</span>
+          <span class="must-card-sub">虎標萬金油、肉乾、Old Seng Choong、黃梨塔</span>
+        </span>
+        <span class="cue">詳情</span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+    <div class="glass must-tip" role="note">
+      <strong>買伴手禮小提醒</strong>
+      <ul>
+        <li>最後一天可在樟宜出境管制區一次買齊（Bengawan Solo／IRVINS／TWG／Bacha；各航廈店家不同，出發前用 Changi App 查）</li>
+        <li>咖椰醬／醬料屬液體膏狀，手提受 100ml 限制，建議託運或過安檢後在機場買</li>
+        <li>iShopChangi 可線上預購，出境時機場取貨</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== MUST EAT ===== -->
+  <section id="must-eat" aria-labelledby="must-eat-title">
+    <div class="section-head">
+      <div class="icon-chip" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8" fill="#86bada" opacity="0.45"/><path d="M8 14c1.2 1.6 2.6 2.4 4 2.4s2.8-.8 4-2.4" stroke="#9f99d1" stroke-width="1.8" fill="none" stroke-linecap="round"/><circle cx="9.2" cy="10.2" r="1.1" fill="#f6bcb0"/><circle cx="14.8" cy="10.2" r="1.1" fill="#ffe3b3"/></svg>
+      </div>
+      <h2 id="must-eat-title">必吃美食</h2>
+    </div>
+    <div class="must-grid">
+      <button type="button" class="tl-place must-card" data-place="tiantian">
+        <span class="must-card-body">
+          <span class="badge badge-eat">必吃</span>
+          <span class="must-card-title">海南雞飯</span>
+          <span class="must-card-sub">天天 Maxwell 🅑／中峇魯 · 小份約 S$5 起</span>
+        </span>
+        <span class="cue">詳情</span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <button type="button" class="tl-place must-card" data-place="jumbo">
+        <span class="must-card-body">
+          <span class="badge badge-eat">必吃</span>
+          <span class="must-card-title">辣椒螃蟹</span>
+          <span class="must-card-sub">JUMBO／Long Beach／Alliance 🅑 · 記得點炸饅頭</span>
+        </span>
+        <span class="cue">詳情</span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <button type="button" class="tl-place must-card" data-place="songfa">
+        <span class="must-card-body">
+          <span class="badge badge-eat">必吃</span>
+          <span class="must-card-title">肉骨茶</span>
+          <span class="must-card-sub">松發 New Bridge 🅑 · 排骨湯約 S$8.80</span>
+        </span>
+        <span class="cue">詳情</span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <button type="button" class="tl-place must-card" data-place="laksa">
+        <span class="must-card-body">
+          <span class="badge badge-eat">必吃</span>
+          <span class="must-card-title">叻沙</span>
+          <span class="must-card-sub">328 Katong／King of Laksa 🅑 · 小碗約 S$6.30</span>
+        </span>
+        <span class="cue">詳情</span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <button type="button" class="tl-place must-card" data-place="laupasat">
+        <span class="must-card-body">
+          <span class="badge badge-eat">必吃</span>
+          <span class="must-card-title">沙嗲</span>
+          <span class="must-card-sub">老巴剎沙嗲街 · 平日 19:00–03:00</span>
+        </span>
+        <span class="cue">詳情</span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <button type="button" class="tl-place must-card" data-place="kwayteow">
+        <span class="must-card-body">
+          <span class="badge badge-eat">必吃</span>
+          <span class="must-card-title">炒粿條</span>
+          <span class="must-card-sub">Outram Park 芳林 🅑／No.18 Zion／Lao Fu Zi</span>
+        </span>
+        <span class="cue">詳情</span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <button type="button" class="tl-place must-card" data-place="yakun">
+        <span class="must-card-body">
+          <span class="badge badge-eat">必吃</span>
+          <span class="must-card-title">咖椰吐司</span>
+          <span class="must-card-sub">亞坤／Killiney · Set A 約 S$6.30</span>
+        </span>
+        <span class="cue">詳情</span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+    <p class="must-subhead">加碼推薦</p>
+    <div class="must-grid">
+      <button type="button" class="tl-place must-card" data-place="taihwa">
+        <span class="must-card-body">
+          <span class="badge badge-eat">必吃</span>
+          <span class="must-card-title">大華豬肉粿條麵 ⭐</span>
+          <span class="must-card-sub">Hill Street Tai Hwa · 米其林一星小販</span>
+        </span>
+        <span class="cue">詳情</span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <button type="button" class="tl-place must-card" data-place="oyster">
+        <span class="must-card-body">
+          <span class="badge badge-eat">必吃</span>
+          <span class="must-card-title">蠔煎</span>
+          <span class="must-card-sub">Hup Kee 紐頓 🅑 · 約 S$8–12</span>
+        </span>
+        <span class="cue">詳情</span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <button type="button" class="tl-place must-card" data-place="hokkien">
+        <span class="must-card-body">
+          <span class="badge badge-eat">必吃</span>
+          <span class="must-card-title">炒福建麵</span>
+          <span class="must-card-sub">Nam Sing 舊機場路 🅑</span>
+        </span>
+        <span class="cue">詳情</span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <button type="button" class="tl-place must-card" data-place="nasi">
+        <span class="must-card-body">
+          <span class="badge badge-eat">必吃</span>
+          <span class="must-card-title">椰漿飯</span>
+          <span class="must-card-sub">The Coconut Club Beach Road 🅑</span>
+        </span>
+        <span class="cue">詳情</span><svg class="chev" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+    <div class="glass must-tip" role="note">
+      <strong>小販中心用餐小提醒</strong>
+      <ul>
+        <li>用餐後請自己收餐盤（tray return）；2024 年起沒收餐盤可能會被罰</li>
+        <li>以現金、PayNow 為主，建議帶小鈔和零錢</li>
+        <li>可用面紙或雨傘「佔位」（chope），這是在地習慣</li>
+        <li>有些攤販週休日不固定，出發前用 Google Maps 查營業時間</li>
+      </ul>
+    </div>
+  </section>
+
   <!-- ===== TODO ===== -->
   <section id="todo" aria-labelledby="todo-title">
     <div class="section-head">
@@ -1914,9 +2188,9 @@ html.reduce-motion .win-pulse { animation: none !important; }
       maps: 'https://www.google.com/maps/search/?api=1&query=Sultan%20Mosque%20Singapore'
     },
     yakun: {
-      name: '亞坤 Bugis Junction',
-      intro: '新加坡老字號咖椰吐司連鎖店，經典早餐是咖椰吐司、半熟蛋配咖啡或茶。離飯店很近，適合出門前吃早餐。',
-      practical: 'Bugis Junction #B1-11；07:30–22:00；A 套餐約 S$6.30。',
+      name: '咖椰吐司（亞坤／Killiney）',
+      intro: '新加坡老字號咖椰吐司。亞坤經典是咖椰吐司、半熟蛋配咖啡或茶；Killiney Kopitiam（67 Killiney Rd 本店，近烏節路）也是常見選擇。',
+      practical: '亞坤 Bugis Junction #B1-11；07:30–22:00；Set A 約 S$6.30（2023 年報導）。Killiney 套餐約 S$6.90（第三方菜單）。創始店也可到遠東廣場 18 China St。',
       maps: 'https://www.google.com/maps/search/?api=1&query=Ya%20Kun%20Kaya%20Toast%20Bugis%20Junction%20Singapore'
     },
     gardens: {
@@ -1926,9 +2200,9 @@ html.reduce-motion .win-pulse { animation: none !important; }
       maps: 'https://www.google.com/maps/search/?api=1&query=Gardens%20by%20the%20Bay%20Singapore'
     },
     laksa: {
-      name: '328 加東叻沙',
-      intro: '加東叻沙的代表店，湯頭濃郁椰香，麵剪短了直接用湯匙吃。',
-      practical: '每天 09:30–21:30；小碗約 S$6.30；不接受訂位。',
+      name: '叻沙（328 Katong／King of Laksa）',
+      intro: '加東叻沙的代表店 328，湯頭濃郁椰香，麵剪短了直接用湯匙吃。另可考慮 2026 必比登新入選的 King of Laksa 🅑（Aljunied）。',
+      practical: '328：每天 09:30–21:30；小碗約 S$6.30、大碗約 S$8.30；不接受訂位。King of Laksa 約 S$8（第三方資料）。',
       maps: 'https://www.google.com/maps/search/?api=1&query=328%20Katong%20Laksa%2051%20East%20Coast%20Road%20Singapore'
     },
     koonseng: {
@@ -1974,9 +2248,9 @@ html.reduce-motion .win-pulse { animation: none !important; }
       maps: 'https://www.google.com/maps/search/?api=1&query=Palawan%20Beach%20Sentosa'
     },
     jumbo: {
-      name: 'JUMBO Seafood Riverside Point',
-      intro: '新加坡最知名的辣椒螃蟹餐廳之一，臨河景觀。辣椒螃蟹記得加點炸饅頭沾醬吃。',
-      practical: '辣椒螃蟹（泥蟹）S$10.80++／100g，建議提早訂位。東海岸旗艦店已在 2026/9/30 結束營業。',
+      name: '辣椒螃蟹／JUMBO Seafood Riverside Point',
+      intro: '新加坡最知名的辣椒螃蟹餐廳之一，臨河景觀。也有 Long Beach（黑胡椒蟹始祖）與紐頓 Alliance Seafood 🅑 等選擇。辣椒螃蟹記得加點炸饅頭沾醬吃。',
+      practical: 'JUMBO 泥蟹不到 1kg 每 100g S$10.80++（約 900g 含服務費稅約 S$117）；Long Beach 每 100g S$11.80++ 起。建議提早訂位。⚠️東海岸創始店已在 2026/9/30 永久結束營業。',
       maps: 'https://www.google.com/maps/search/?api=1&query=JUMBO%20Seafood%20Riverside%20Point%20Singapore'
     },
     clarkequay: {
@@ -2004,9 +2278,9 @@ html.reduce-motion .win-pulse { animation: none !important; }
       maps: 'https://www.google.com/maps/search/?api=1&query=Buddha%20Tooth%20Relic%20Temple%20Singapore'
     },
     tiantian: {
-      name: '天天海南雞飯（麥士威熟食中心）',
-      intro: '麥士威熟食中心最有名的海南雞飯攤，米其林必比登推薦，雞肉滑嫩、雞油飯很香。',
-      practical: '週二至週日 10:00–20:00，週一公休；常提早賣完。建議帶現金；小份約 S$5。',
+      name: '海南雞飯（天天 Maxwell／中峇魯）',
+      intro: '麥士威熟食中心的天天海南雞飯 🅑，10 屆必比登都有入選，雞肉滑嫩、雞油飯很香。另可考慮中峇魯市場的 Tiong Bahru Hainanese Boneless Chicken Rice 🅑。',
+      practical: '天天：週二至週日 10:00–20:00，週一公休；常提早賣完。小份約 S$5、中 S$6、大 S$9，半隻雞 S$17（第三方資料）。建議帶現金。',
       maps: 'https://www.google.com/maps/search/?api=1&query=Tian%20Tian%20Hainanese%20Chicken%20Rice%20Maxwell%20Food%20Centre%20Singapore'
     },
     orchard: {
@@ -2020,7 +2294,80 @@ html.reduce-motion .win-pulse { animation: none !important; }
       intro: 'Armenian Street 的娘惹菜餐廳，米其林必比登推薦，裝潢充滿土生華人風格。推薦試試黑果雞（Ayam Buah Keluak）。',
       practical: '建議提早訂位；週日及國定假日公休。',
       maps: 'https://www.google.com/maps/search/?api=1&query=True%20Blue%20Cuisine%20Armenian%20Street%20Singapore'
-    }
+    },
+
+    bengawan: {
+      name: 'Bengawan Solo 梭羅河糕點',
+      intro: '新加坡老字號娘惹糕點店，千層糕、餅乾禮盒都很受歡迎，是經典伴手禮選擇。',
+      practical: '市區：ION Orchard B4、高島屋（Ngee Ann City）、Raffles City、Bugis Junction、Plaza Singapura 等。樟宜：T1／T2／T4 出境管制區內，T3 出境報到大廳 #02-85，星耀樟宜 #01-228/229。餅乾罐約 S$25–28（iShopChangi 網購價，市區門市可能略有不同）。',
+      maps: 'https://www.google.com/maps/search/?api=1&query=Bengawan%20Solo%20ION%20Orchard%20Singapore'
+    },
+    irvins: {
+      name: 'IRVINS 鹹蛋魚皮／洋芋片',
+      intro: '鹹蛋黃口味零食，很適合送辦公室同事，體積也不大。',
+      practical: '市區：Orchard Gateway、高島屋、Bugis Junction、聖淘沙 RWS WEAVE。樟宜：T1／T2／T3（南、北）／T4 出境管制區內，星耀樟宜 B2。95g 約 S$8.72、210g 約 S$19（iShopChangi 價）。',
+      maps: 'https://www.google.com/maps/search/?api=1&query=IRVINS%20Salted%20Egg%20Orchard%20Gateway%20Singapore'
+    },
+    twg: {
+      name: 'TWG Tea',
+      intro: '新加坡高級茶品牌，茶罐包裝很漂亮，送禮很有面子。',
+      practical: '市區：ION Orchard #02-21 茶沙龍、濱海灣金沙購物中心。樟宜：T2／T3／T4（T3 另有茶藝廊）。茶包盒約 S$27.5 起、茶罐約 S$44 起（iShopChangi 價）。',
+      maps: 'https://www.google.com/maps/search/?api=1&query=TWG%20Tea%20ION%20Orchard%20Singapore'
+    },
+    bacha: {
+      name: 'Bacha Coffee',
+      intro: '摩洛哥風格精品咖啡，金色包裝很顯眼，近年熱門伴手禮。',
+      practical: '市區：ION Orchard #01-15/16、濱海灣金沙購物中心 #B2-86。樟宜：T1–T4 出境管制區（依 Changi Pay 店家清單）。12 入濾掛禮盒約 S$29.4、25 入試飲組約 S$58.7（iShopChangi 價）。',
+      maps: 'https://www.google.com/maps/search/?api=1&query=Bacha%20Coffee%20ION%20Orchard%20Singapore'
+    },
+    prima: {
+      name: 'Prima Taste 百勝廚',
+      intro: '在家就能煮出叻沙、海南雞飯、辣椒蟹味道的即食包／拉麵，很適合帶回台灣。',
+      practical: '超市 NTUC FairPrice、Cold Storage 等有賣。機場有沒有賣 ⚠️未查證。FairPrice：叻沙拉麵 4 入約 S$10.80（促銷價曾到 S$8.95）。醬料屬液體膏狀，手提受 100ml 限制，建議託運。',
+      maps: 'https://www.google.com/maps/search/?api=1&query=NTUC%20FairPrice%20Singapore'
+    },
+    'yakun-kaya': {
+      name: 'Ya Kun 亞坤咖椰醬（kaya）',
+      intro: '吃完咖椰吐司可以把醬帶回家自己抹吐司，是很有新加坡味的小禮物。',
+      practical: 'Ya Kun 各門市可買（例如遠東廣場 18 China St）。機場門市 ⚠️未查證；價格 ⚠️未查證。咖椰醬屬膏狀，手提受 100ml 液體限制，建議託運或過安檢後再買。',
+      maps: 'https://www.google.com/maps/search/?api=1&query=Ya%20Kun%20Kaya%20Toast%20Far%20East%20Square%20Singapore'
+    },
+    'others-buy': {
+      name: '其他可考慮的伴手禮',
+      intro: '虎標萬金油、肉乾（美珍香／林志源）、Old Seng Choong 糕點、黃梨塔等，也常被旅客帶回。',
+      practical: '牛車水、超市、商場都找得到。價格 ⚠️未查證。肉類製品能不能帶回台灣，請先查台灣防檢署規定。',
+      maps: 'https://www.google.com/maps/search/?api=1&query=Bugis%20Junction%20Singapore'
+    },
+    kwayteow: {
+      name: '炒粿條',
+      intro: '新加坡經典炒粿條，寬河粉大火快炒，帶一點甜與醬香。',
+      practical: '推薦：Outram Park Fried Kway Teow Mee 🅑（芳林小販中心 Hong Lim，牛車水）、No.18 Zion Road Fried Kway Teow 🅑（Zion Riverside Food Centre）、Lao Fu Zi Fried Kway Teow 🅑（舊機場路小販中心）。價格 ⚠️未查證（小販攤一般約 S$5–8）。',
+      maps: 'https://www.google.com/maps/search/?api=1&query=Outram%20Park%20Fried%20Kway%20Teow%20Hong%20Lim%20Market%20Singapore'
+    },
+    taihwa: {
+      name: '大華豬肉粿條麵 Hill Street Tai Hwa',
+      intro: '全新加坡唯一摘星的小販攤（米其林一星 ⭐），2026 年保住一星；常要排隊很久。',
+      practical: 'Hill Street Tai Hwa Pork Noodle。價格 ⚠️未查證。建議避開尖峰、提早到，並帶現金。',
+      maps: 'https://www.google.com/maps/search/?api=1&query=Hill%20Street%20Tai%20Hwa%20Pork%20Noodle%20Singapore'
+    },
+    oyster: {
+      name: '蠔煎 Hup Kee',
+      intro: '紐頓小販中心的經典蠔煎，2026 米其林必比登新入選 🅑。',
+      practical: 'Hup Kee Fried Oyster Omelette（Newton Food Centre）。約 S$8–12（第三方資料）。建議帶現金。',
+      maps: 'https://www.google.com/maps/search/?api=1&query=Hup%20Kee%20Fried%20Oyster%20Omelette%20Newton%20Food%20Centre%20Singapore'
+    },
+    hokkien: {
+      name: '炒福建麵 Nam Sing',
+      intro: '舊機場路小販中心的炒福建麵，2026 米其林必比登推薦 🅑。',
+      practical: 'Nam Sing Hokkien Fried Mee（Old Airport Road Food Centre）。價格 ⚠️未查證。出發前用 Google Maps 查營業時間。',
+      maps: 'https://www.google.com/maps/search/?api=1&query=Nam%20Sing%20Hokkien%20Fried%20Mee%20Old%20Airport%20Road%20Singapore'
+    },
+    nasi: {
+      name: '椰漿飯 The Coconut Club',
+      intro: 'Beach Road 的椰漿飯餐廳，2026 米其林必比登推薦 🅑，不是傳統小販攤形式。',
+      practical: 'The Coconut Club（Beach Road）。價格 ⚠️未查證。建議出發前查營業時間與是否需訂位。',
+      maps: 'https://www.google.com/maps/search/?api=1&query=The%20Coconut%20Club%20Beach%20Road%20Singapore'
+    },
   };
 
   var overlay = document.getElementById('placeOverlay');
@@ -2039,7 +2386,13 @@ html.reduce-motion .win-pulse { animation: none !important; }
     placeTitle.textContent = p.name;
     placeIntro.textContent = p.intro;
     placePractical.textContent = p.practical;
-    placeMaps.href = p.maps;
+    if (p.maps) {
+      placeMaps.href = p.maps;
+      placeMaps.style.display = '';
+    } else {
+      placeMaps.removeAttribute('href');
+      placeMaps.style.display = 'none';
+    }
     overlay.classList.add('open');
     overlay.setAttribute('aria-hidden', 'false');
     document.body.classList.add('sheet-open');
